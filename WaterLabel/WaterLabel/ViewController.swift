@@ -12,7 +12,19 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+    }
+    // 添加水印
+    @IBAction func addWaterAction(sender: UIButton) {
+        
+    }
+    // 默认水印
+    @IBAction func defaultAction(sender: UIButton) {
+        
+    }
+    // 联系我们
+    @IBAction func contactAction(sender: UIButton) {
+        
     }
 
     override func didReceiveMemoryWarning() {
