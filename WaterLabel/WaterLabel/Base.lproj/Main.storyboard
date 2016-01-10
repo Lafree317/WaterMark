@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="zAs-Za-fKy">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
@@ -23,7 +23,7 @@
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="56v-yO-u7R">
                                 <rect key="frame" x="90" y="276" width="195" height="73"/>
-                                <color key="backgroundColor" red="0.6476560475858586" green="0.64745778465969839" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.44313725490196076" green="0.7803921568627451" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="73" id="EVk-dr-H9u"/>
                                     <constraint firstAttribute="width" constant="195" id="ZcL-Fq-wB7"/>
@@ -38,7 +38,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kim-Ak-cfw">
                                 <rect key="frame" x="90" y="488" width="195" height="73"/>
-                                <color key="backgroundColor" red="0.6369945632897136" green="0.70020796200404045" blue="0.62698980133103976" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.38823529411764707" green="0.68235294117647061" blue="0.69411764705882351" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="73" id="5Ex-lJ-lq6"/>
                                     <constraint firstAttribute="width" constant="195" id="Qv4-Wv-vmT"/>
@@ -71,7 +71,7 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IvO-9s-YKc">
                                 <rect key="frame" x="90" y="84" width="195" height="73"/>
-                                <color key="backgroundColor" red="0.44949831066724294" green="0.7722370766272727" blue="0.60691152042564989" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.32941176470588235" green="0.5725490196078431" blue="0.77647058823529413" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="IvO-9s-YKc" secondAttribute="height" multiplier="195:73" id="cb7-T8-Z3w"/>
                                     <constraint firstAttribute="width" constant="195" id="m2P-lA-Gvr"/>
