@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  WaterLabel
 //
-//  Created by huchunyuan on 16/1/4.
-//  Copyright © 2016年 huchunyuan. All rights reserved.
+//  Created by 胡春源 on 16/7/19.
+//  Copyright © 2016年 胡春源. All rights reserved.
 //
 
 import UIKit
@@ -16,7 +16,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
-        
         return true
     }
 

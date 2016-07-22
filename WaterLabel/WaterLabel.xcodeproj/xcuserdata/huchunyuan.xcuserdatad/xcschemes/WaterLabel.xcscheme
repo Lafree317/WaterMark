@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0720"
+   LastUpgradeVersion = "0730"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "528173521C3AADAC0049F80E"
+               BlueprintIdentifier = "52FBD83C1D3DDDD700304651"
                BuildableName = "WaterLabel.app"
                BlueprintName = "WaterLabel"
                ReferencedContainer = "container:WaterLabel.xcodeproj">
@@ -32,7 +32,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "528173521C3AADAC0049F80E"
+            BlueprintIdentifier = "52FBD83C1D3DDDD700304651"
             BuildableName = "WaterLabel.app"
             BlueprintName = "WaterLabel"
             ReferencedContainer = "container:WaterLabel.xcodeproj">
@@ -55,7 +55,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "528173521C3AADAC0049F80E"
+            BlueprintIdentifier = "52FBD83C1D3DDDD700304651"
             BuildableName = "WaterLabel.app"
             BlueprintName = "WaterLabel"
             ReferencedContainer = "container:WaterLabel.xcodeproj">
@@ -74,7 +74,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "528173521C3AADAC0049F80E"
+            BlueprintIdentifier = "52FBD83C1D3DDDD700304651"
             BuildableName = "WaterLabel.app"
             BlueprintName = "WaterLabel"
             ReferencedContainer = "container:WaterLabel.xcodeproj">
