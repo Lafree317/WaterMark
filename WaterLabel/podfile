@@ -1,0 +1,8 @@
+target 'WaterLabel' do
+    use_frameworks!   
+    pod 'LeanCloud', :git => 'git@github.com:leancloud/swift-sdk.git'
+    pod 'RxSwift'
+    pod 'RxCocoa'
+    pod 'SnapKit'
+    pod 'MBProgressHUD'
+end

@@ -7,6 +7,43 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		522D718F1D4AFEAF00514703 /* ColorSelectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522D718E1D4AFEAF00514703 /* ColorSelectView.swift */; };
+		522D71911D4B001300514703 /* SelectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522D71901D4B001300514703 /* SelectView.swift */; };
+		522D873B1D6C31E40034BCE1 /* ZELoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522D873A1D6C31E40034BCE1 /* ZELoginModel.swift */; };
+		522D873D1D6C33210034BCE1 /* ZEHead.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522D873C1D6C33210034BCE1 /* ZEHead.swift */; };
+		5232179C1D504F5E0021A13D /* ZEHud.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5232179B1D504F5E0021A13D /* ZEHud.swift */; };
+		5256703A1D4F2245005DA86F /* FontEditSubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525670391D4F2245005DA86F /* FontEditSubView.swift */; };
+		5257C8A11D47368C00CC30AD /* LabelModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5257C8A01D47368C00CC30AD /* LabelModel.swift */; };
+		5257C8A41D473C5700CC30AD /* GestureRecognizerProtocl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5257C8A31D473C5700CC30AD /* GestureRecognizerProtocl.swift */; };
+		525938481D6C29A700829E12 /* ZEFeedBackContoller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5259383C1D6C29A700829E12 /* ZEFeedBackContoller.swift */; };
+		525938491D6C29A700829E12 /* ZEFeedBackModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5259383E1D6C29A700829E12 /* ZEFeedBackModel.swift */; };
+		5259384A1D6C29A700829E12 /* ZEFeedBackSubViewClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525938401D6C29A700829E12 /* ZEFeedBackSubViewClass.swift */; };
+		5259384B1D6C29A700829E12 /* ZEFeedBackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525938411D6C29A700829E12 /* ZEFeedBackView.swift */; };
+		5259384C1D6C29A700829E12 /* ZELoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525938441D6C29A700829E12 /* ZELoginViewController.swift */; };
+		5259384D1D6C29A700829E12 /* ZELoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525938471D6C29A700829E12 /* ZELoginView.swift */; };
+		525E167A1D66AA5E0046B38E /* TZAssetCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 525E16681D66AA5E0046B38E /* TZAssetCell.m */; };
+		525E167B1D66AA5E0046B38E /* TZAssetModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 525E166A1D66AA5E0046B38E /* TZAssetModel.m */; };
+		525E167C1D66AA5E0046B38E /* TZImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 525E166C1D66AA5E0046B38E /* TZImageManager.m */; };
+		525E167D1D66AA5E0046B38E /* TZImagePickerController.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 525E166D1D66AA5E0046B38E /* TZImagePickerController.bundle */; };
+		525E167E1D66AA5E0046B38E /* TZImagePickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 525E166F1D66AA5E0046B38E /* TZImagePickerController.m */; };
+		525E167F1D66AA5E0046B38E /* TZPhotoPickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 525E16711D66AA5E0046B38E /* TZPhotoPickerController.m */; };
+		525E16801D66AA5E0046B38E /* TZPhotoPreviewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 525E16731D66AA5E0046B38E /* TZPhotoPreviewCell.m */; };
+		525E16811D66AA5E0046B38E /* TZPhotoPreviewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 525E16751D66AA5E0046B38E /* TZPhotoPreviewController.m */; };
+		525E16821D66AA5E0046B38E /* TZVideoPlayerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 525E16771D66AA5E0046B38E /* TZVideoPlayerController.m */; };
+		525E16831D66AA5E0046B38E /* UIView+Layout.m in Sources */ = {isa = PBXBuildFile; fileRef = 525E16791D66AA5E0046B38E /* UIView+Layout.m */; };
+		527145CE1D65641A00B1B778 /* ColorFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527145CD1D65641A00B1B778 /* ColorFile.swift */; };
+		527145D21D658EBD00B1B778 /* RootKEy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527145D11D658EBD00B1B778 /* RootKEy.swift */; };
+		527C947A1D4DC33A00560B0A /* EditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527C94791D4DC33A00560B0A /* EditView.swift */; };
+		528766861D66D7E100884323 /* KLCPopup.m in Sources */ = {isa = PBXBuildFile; fileRef = 528766851D66D7E100884323 /* KLCPopup.m */; };
+		528766891D66D80600884323 /* ShowString.m in Sources */ = {isa = PBXBuildFile; fileRef = 528766881D66D80600884323 /* ShowString.m */; };
+		5293CCC41D66DDE50027F40F /* ZEHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5293CCC31D66DDE50027F40F /* ZEHomeView.swift */; };
+		529AD6161D49A46C00A99735 /* DemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529AD6151D49A46C00A99735 /* DemoViewController.swift */; };
+		529AD6191D49A4EA00A99735 /* ZEAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529AD6181D49A4EA00A99735 /* ZEAlertView.swift */; };
+		529AD61B1D49A51C00A99735 /* ZEToolBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529AD61A1D49A51C00A99735 /* ZEToolBar.swift */; };
+		529AD6231D49E53000A99735 /* IGLDropDownItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 529AD6201D49E53000A99735 /* IGLDropDownItem.m */; };
+		529AD6241D49E53000A99735 /* IGLDropDownMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 529AD6221D49E53000A99735 /* IGLDropDownMenu.m */; };
+		529AD62A1D49F6CD00A99735 /* UIImage+RoundedCorner.m in Sources */ = {isa = PBXBuildFile; fileRef = 529AD6271D49F6CD00A99735 /* UIImage+RoundedCorner.m */; };
+		529AD62B1D49F6CD00A99735 /* UIView+RoundedCorner.m in Sources */ = {isa = PBXBuildFile; fileRef = 529AD6291D49F6CD00A99735 /* UIView+RoundedCorner.m */; };
 		52FBD8411D3DDDD700304651 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FBD8401D3DDDD700304651 /* AppDelegate.swift */; };
 		52FBD8481D3DDDD700304651 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52FBD8471D3DDDD700304651 /* Assets.xcassets */; };
 		52FBD89D1D3DDDED00304651 /* MarcoFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FBD8541D3DDDED00304651 /* MarcoFile.swift */; };
@@ -15,35 +52,79 @@
 		52FBD8A01D3DDDED00304651 /* EditImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FBD85C1D3DDDED00304651 /* EditImageView.swift */; };
 		52FBD8A11D3DDDED00304651 /* WaterLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FBD85D1D3DDDED00304651 /* WaterLabel.swift */; };
 		52FBD8A21D3DDDED00304651 /* EditLabelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FBD8601D3DDDED00304651 /* EditLabelViewController.swift */; };
-		52FBD8A31D3DDDED00304651 /* LabelEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FBD8631D3DDDED00304651 /* LabelEditView.swift */; };
-		52FBD8A41D3DDDED00304651 /* LabelEditView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52FBD8641D3DDDED00304651 /* LabelEditView.xib */; };
-		52FBD8A51D3DDDED00304651 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FBD8671D3DDDED00304651 /* ViewController.swift */; };
+		52FBD8A51D3DDDED00304651 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FBD8671D3DDDED00304651 /* HomeViewController.swift */; };
 		52FBD8A61D3DDDED00304651 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52FBD86B1D3DDDED00304651 /* LaunchScreen.storyboard */; };
 		52FBD8A71D3DDDED00304651 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52FBD86C1D3DDDED00304651 /* Main.storyboard */; };
-		52FBD8A81D3DDDED00304651 /* UIImage+MLTint.m in Sources */ = {isa = PBXBuildFile; fileRef = 52FBD8721D3DDDED00304651 /* UIImage+MLTint.m */; };
-		52FBD8A91D3DDDED00304651 /* UIView+MLExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 52FBD8741D3DDDED00304651 /* UIView+MLExtension.m */; };
-		52FBD8AA1D3DDDED00304651 /* MLSelectPhotoAssets.m in Sources */ = {isa = PBXBuildFile; fileRef = 52FBD8791D3DDDED00304651 /* MLSelectPhotoAssets.m */; };
-		52FBD8AB1D3DDDED00304651 /* MLSelectPhotoPickerBrowserPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = 52FBD87B1D3DDDED00304651 /* MLSelectPhotoPickerBrowserPhoto.m */; };
-		52FBD8AC1D3DDDED00304651 /* MLSelectPhotoPickerDatas.m in Sources */ = {isa = PBXBuildFile; fileRef = 52FBD87D1D3DDDED00304651 /* MLSelectPhotoPickerDatas.m */; };
-		52FBD8AD1D3DDDED00304651 /* MLSelectPhotoPickerGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 52FBD87F1D3DDDED00304651 /* MLSelectPhotoPickerGroup.m */; };
-		52FBD8AE1D3DDDED00304651 /* MLSelectPhotoBrowserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52FBD8821D3DDDED00304651 /* MLSelectPhotoBrowserViewController.m */; };
-		52FBD8AF1D3DDDED00304651 /* MLSelectPhotoNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52FBD8841D3DDDED00304651 /* MLSelectPhotoNavigationViewController.m */; };
-		52FBD8B01D3DDDED00304651 /* MLSelectPhotoPickerAssetsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52FBD8861D3DDDED00304651 /* MLSelectPhotoPickerAssetsViewController.m */; };
-		52FBD8B11D3DDDED00304651 /* MLSelectPhotoPickerGroupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52FBD8881D3DDDED00304651 /* MLSelectPhotoPickerGroupViewController.m */; };
-		52FBD8B21D3DDDED00304651 /* MLSelectPhotoPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52FBD88A1D3DDDED00304651 /* MLSelectPhotoPickerViewController.m */; };
-		52FBD8B31D3DDDED00304651 /* MLPhotoPickerImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 52FBD88D1D3DDDED00304651 /* MLPhotoPickerImageView.m */; };
-		52FBD8B41D3DDDED00304651 /* MLSelectPhotoPickerBrowserPhotoImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 52FBD88F1D3DDDED00304651 /* MLSelectPhotoPickerBrowserPhotoImageView.m */; };
-		52FBD8B51D3DDDED00304651 /* MLSelectPhotoPickerBrowserPhotoScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 52FBD8911D3DDDED00304651 /* MLSelectPhotoPickerBrowserPhotoScrollView.m */; };
-		52FBD8B61D3DDDED00304651 /* MLSelectPhotoPickerBrowserPhotoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 52FBD8931D3DDDED00304651 /* MLSelectPhotoPickerBrowserPhotoView.m */; };
-		52FBD8B71D3DDDED00304651 /* MLSelectPhotoPickerCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 52FBD8951D3DDDED00304651 /* MLSelectPhotoPickerCollectionView.m */; };
-		52FBD8B81D3DDDED00304651 /* MLSelectPhotoPickerCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 52FBD8971D3DDDED00304651 /* MLSelectPhotoPickerCollectionViewCell.m */; };
-		52FBD8B91D3DDDED00304651 /* MLSelectPhotoPickerFooterCollectionReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 52FBD8991D3DDDED00304651 /* MLSelectPhotoPickerFooterCollectionReusableView.m */; };
-		52FBD8BA1D3DDDED00304651 /* MLSelectPhotoPickerGroupTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 52FBD89B1D3DDDED00304651 /* MLSelectPhotoPickerGroupTableViewCell.m */; };
-		52FBD8BB1D3DDDED00304651 /* MLSelectPhoto.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 52FBD89C1D3DDDED00304651 /* MLSelectPhoto.bundle */; };
+		A2FBCC8F98945AD77A685174 /* Pods_WaterLabel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D05AC58CCD980CE89B24C8CE /* Pods_WaterLabel.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		5264FC291D4763BC00060480 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		5288EAC01D3EECB4007FBBEC /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
+		522D718E1D4AFEAF00514703 /* ColorSelectView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorSelectView.swift; sourceTree = "<group>"; };
+		522D71901D4B001300514703 /* SelectView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectView.swift; sourceTree = "<group>"; };
+		522D873A1D6C31E40034BCE1 /* ZELoginModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZELoginModel.swift; sourceTree = "<group>"; };
+		522D873C1D6C33210034BCE1 /* ZEHead.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZEHead.swift; sourceTree = "<group>"; };
+		5232179B1D504F5E0021A13D /* ZEHud.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZEHud.swift; sourceTree = "<group>"; };
+		525670391D4F2245005DA86F /* FontEditSubView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontEditSubView.swift; sourceTree = "<group>"; };
+		5257C8A01D47368C00CC30AD /* LabelModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelModel.swift; sourceTree = "<group>"; };
+		5257C8A31D473C5700CC30AD /* GestureRecognizerProtocl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GestureRecognizerProtocl.swift; sourceTree = "<group>"; };
+		5259383C1D6C29A700829E12 /* ZEFeedBackContoller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZEFeedBackContoller.swift; sourceTree = "<group>"; };
+		5259383E1D6C29A700829E12 /* ZEFeedBackModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZEFeedBackModel.swift; sourceTree = "<group>"; };
+		525938401D6C29A700829E12 /* ZEFeedBackSubViewClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZEFeedBackSubViewClass.swift; sourceTree = "<group>"; };
+		525938411D6C29A700829E12 /* ZEFeedBackView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZEFeedBackView.swift; sourceTree = "<group>"; };
+		525938441D6C29A700829E12 /* ZELoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZELoginViewController.swift; sourceTree = "<group>"; };
+		525938471D6C29A700829E12 /* ZELoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZELoginView.swift; sourceTree = "<group>"; };
+		525E16671D66AA5E0046B38E /* TZAssetCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZAssetCell.h; sourceTree = "<group>"; };
+		525E16681D66AA5E0046B38E /* TZAssetCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZAssetCell.m; sourceTree = "<group>"; };
+		525E16691D66AA5E0046B38E /* TZAssetModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZAssetModel.h; sourceTree = "<group>"; };
+		525E166A1D66AA5E0046B38E /* TZAssetModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZAssetModel.m; sourceTree = "<group>"; };
+		525E166B1D66AA5E0046B38E /* TZImageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZImageManager.h; sourceTree = "<group>"; };
+		525E166C1D66AA5E0046B38E /* TZImageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZImageManager.m; sourceTree = "<group>"; };
+		525E166D1D66AA5E0046B38E /* TZImagePickerController.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TZImagePickerController.bundle; sourceTree = "<group>"; };
+		525E166E1D66AA5E0046B38E /* TZImagePickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZImagePickerController.h; sourceTree = "<group>"; };
+		525E166F1D66AA5E0046B38E /* TZImagePickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZImagePickerController.m; sourceTree = "<group>"; };
+		525E16701D66AA5E0046B38E /* TZPhotoPickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZPhotoPickerController.h; sourceTree = "<group>"; };
+		525E16711D66AA5E0046B38E /* TZPhotoPickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZPhotoPickerController.m; sourceTree = "<group>"; };
+		525E16721D66AA5E0046B38E /* TZPhotoPreviewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZPhotoPreviewCell.h; sourceTree = "<group>"; };
+		525E16731D66AA5E0046B38E /* TZPhotoPreviewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZPhotoPreviewCell.m; sourceTree = "<group>"; };
+		525E16741D66AA5E0046B38E /* TZPhotoPreviewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZPhotoPreviewController.h; sourceTree = "<group>"; };
+		525E16751D66AA5E0046B38E /* TZPhotoPreviewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZPhotoPreviewController.m; sourceTree = "<group>"; };
+		525E16761D66AA5E0046B38E /* TZVideoPlayerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZVideoPlayerController.h; sourceTree = "<group>"; };
+		525E16771D66AA5E0046B38E /* TZVideoPlayerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZVideoPlayerController.m; sourceTree = "<group>"; };
+		525E16781D66AA5E0046B38E /* UIView+Layout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Layout.h"; sourceTree = "<group>"; };
+		525E16791D66AA5E0046B38E /* UIView+Layout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Layout.m"; sourceTree = "<group>"; };
+		527145CD1D65641A00B1B778 /* ColorFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorFile.swift; sourceTree = "<group>"; };
+		527145D11D658EBD00B1B778 /* RootKEy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootKEy.swift; sourceTree = "<group>"; };
+		527C94791D4DC33A00560B0A /* EditView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditView.swift; sourceTree = "<group>"; };
+		52808B3A1D52F5CB00E5832B /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
+		528766841D66D7E100884323 /* KLCPopup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLCPopup.h; sourceTree = "<group>"; };
+		528766851D66D7E100884323 /* KLCPopup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLCPopup.m; sourceTree = "<group>"; };
+		528766871D66D80600884323 /* ShowString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShowString.h; sourceTree = "<group>"; };
+		528766881D66D80600884323 /* ShowString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShowString.m; sourceTree = "<group>"; };
+		5293CCC31D66DDE50027F40F /* ZEHomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZEHomeView.swift; sourceTree = "<group>"; };
+		529AD6151D49A46C00A99735 /* DemoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoViewController.swift; sourceTree = "<group>"; };
+		529AD6181D49A4EA00A99735 /* ZEAlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZEAlertView.swift; sourceTree = "<group>"; };
+		529AD61A1D49A51C00A99735 /* ZEToolBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZEToolBar.swift; sourceTree = "<group>"; };
+		529AD61F1D49E53000A99735 /* IGLDropDownItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IGLDropDownItem.h; sourceTree = "<group>"; };
+		529AD6201D49E53000A99735 /* IGLDropDownItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IGLDropDownItem.m; sourceTree = "<group>"; };
+		529AD6211D49E53000A99735 /* IGLDropDownMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IGLDropDownMenu.h; sourceTree = "<group>"; };
+		529AD6221D49E53000A99735 /* IGLDropDownMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IGLDropDownMenu.m; sourceTree = "<group>"; };
+		529AD6261D49F6CD00A99735 /* UIImage+RoundedCorner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+RoundedCorner.h"; sourceTree = "<group>"; };
+		529AD6271D49F6CD00A99735 /* UIImage+RoundedCorner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+RoundedCorner.m"; sourceTree = "<group>"; };
+		529AD6281D49F6CD00A99735 /* UIView+RoundedCorner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+RoundedCorner.h"; sourceTree = "<group>"; };
+		529AD6291D49F6CD00A99735 /* UIView+RoundedCorner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+RoundedCorner.m"; sourceTree = "<group>"; };
 		52FBD83D1D3DDDD700304651 /* WaterLabel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WaterLabel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52FBD8401D3DDDD700304651 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		52FBD8471D3DDDD700304651 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -55,52 +136,12 @@
 		52FBD85C1D3DDDED00304651 /* EditImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditImageView.swift; sourceTree = "<group>"; };
 		52FBD85D1D3DDDED00304651 /* WaterLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaterLabel.swift; sourceTree = "<group>"; };
 		52FBD8601D3DDDED00304651 /* EditLabelViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditLabelViewController.swift; sourceTree = "<group>"; };
-		52FBD8631D3DDDED00304651 /* LabelEditView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelEditView.swift; sourceTree = "<group>"; };
-		52FBD8641D3DDDED00304651 /* LabelEditView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LabelEditView.xib; sourceTree = "<group>"; };
-		52FBD8671D3DDDED00304651 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		52FBD8671D3DDDED00304651 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		52FBD86B1D3DDDED00304651 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		52FBD86C1D3DDDED00304651 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		52FBD8711D3DDDED00304651 /* UIImage+MLTint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+MLTint.h"; sourceTree = "<group>"; };
-		52FBD8721D3DDDED00304651 /* UIImage+MLTint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+MLTint.m"; sourceTree = "<group>"; };
-		52FBD8731D3DDDED00304651 /* UIView+MLExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+MLExtension.h"; sourceTree = "<group>"; };
-		52FBD8741D3DDDED00304651 /* UIView+MLExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+MLExtension.m"; sourceTree = "<group>"; };
-		52FBD8751D3DDDED00304651 /* MLSelectPhoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLSelectPhoto.h; sourceTree = "<group>"; };
-		52FBD8761D3DDDED00304651 /* MLSelectPhotoCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLSelectPhotoCommon.h; sourceTree = "<group>"; };
-		52FBD8781D3DDDED00304651 /* MLSelectPhotoAssets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLSelectPhotoAssets.h; sourceTree = "<group>"; };
-		52FBD8791D3DDDED00304651 /* MLSelectPhotoAssets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLSelectPhotoAssets.m; sourceTree = "<group>"; };
-		52FBD87A1D3DDDED00304651 /* MLSelectPhotoPickerBrowserPhoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLSelectPhotoPickerBrowserPhoto.h; sourceTree = "<group>"; };
-		52FBD87B1D3DDDED00304651 /* MLSelectPhotoPickerBrowserPhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLSelectPhotoPickerBrowserPhoto.m; sourceTree = "<group>"; };
-		52FBD87C1D3DDDED00304651 /* MLSelectPhotoPickerDatas.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLSelectPhotoPickerDatas.h; sourceTree = "<group>"; };
-		52FBD87D1D3DDDED00304651 /* MLSelectPhotoPickerDatas.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLSelectPhotoPickerDatas.m; sourceTree = "<group>"; };
-		52FBD87E1D3DDDED00304651 /* MLSelectPhotoPickerGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLSelectPhotoPickerGroup.h; sourceTree = "<group>"; };
-		52FBD87F1D3DDDED00304651 /* MLSelectPhotoPickerGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLSelectPhotoPickerGroup.m; sourceTree = "<group>"; };
-		52FBD8811D3DDDED00304651 /* MLSelectPhotoBrowserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLSelectPhotoBrowserViewController.h; sourceTree = "<group>"; };
-		52FBD8821D3DDDED00304651 /* MLSelectPhotoBrowserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLSelectPhotoBrowserViewController.m; sourceTree = "<group>"; };
-		52FBD8831D3DDDED00304651 /* MLSelectPhotoNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLSelectPhotoNavigationViewController.h; sourceTree = "<group>"; };
-		52FBD8841D3DDDED00304651 /* MLSelectPhotoNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLSelectPhotoNavigationViewController.m; sourceTree = "<group>"; };
-		52FBD8851D3DDDED00304651 /* MLSelectPhotoPickerAssetsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLSelectPhotoPickerAssetsViewController.h; sourceTree = "<group>"; };
-		52FBD8861D3DDDED00304651 /* MLSelectPhotoPickerAssetsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLSelectPhotoPickerAssetsViewController.m; sourceTree = "<group>"; };
-		52FBD8871D3DDDED00304651 /* MLSelectPhotoPickerGroupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLSelectPhotoPickerGroupViewController.h; sourceTree = "<group>"; };
-		52FBD8881D3DDDED00304651 /* MLSelectPhotoPickerGroupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLSelectPhotoPickerGroupViewController.m; sourceTree = "<group>"; };
-		52FBD8891D3DDDED00304651 /* MLSelectPhotoPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLSelectPhotoPickerViewController.h; sourceTree = "<group>"; };
-		52FBD88A1D3DDDED00304651 /* MLSelectPhotoPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLSelectPhotoPickerViewController.m; sourceTree = "<group>"; };
-		52FBD88C1D3DDDED00304651 /* MLPhotoPickerImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLPhotoPickerImageView.h; sourceTree = "<group>"; };
-		52FBD88D1D3DDDED00304651 /* MLPhotoPickerImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLPhotoPickerImageView.m; sourceTree = "<group>"; };
-		52FBD88E1D3DDDED00304651 /* MLSelectPhotoPickerBrowserPhotoImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLSelectPhotoPickerBrowserPhotoImageView.h; sourceTree = "<group>"; };
-		52FBD88F1D3DDDED00304651 /* MLSelectPhotoPickerBrowserPhotoImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLSelectPhotoPickerBrowserPhotoImageView.m; sourceTree = "<group>"; };
-		52FBD8901D3DDDED00304651 /* MLSelectPhotoPickerBrowserPhotoScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLSelectPhotoPickerBrowserPhotoScrollView.h; sourceTree = "<group>"; };
-		52FBD8911D3DDDED00304651 /* MLSelectPhotoPickerBrowserPhotoScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLSelectPhotoPickerBrowserPhotoScrollView.m; sourceTree = "<group>"; };
-		52FBD8921D3DDDED00304651 /* MLSelectPhotoPickerBrowserPhotoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLSelectPhotoPickerBrowserPhotoView.h; sourceTree = "<group>"; };
-		52FBD8931D3DDDED00304651 /* MLSelectPhotoPickerBrowserPhotoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLSelectPhotoPickerBrowserPhotoView.m; sourceTree = "<group>"; };
-		52FBD8941D3DDDED00304651 /* MLSelectPhotoPickerCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLSelectPhotoPickerCollectionView.h; sourceTree = "<group>"; };
-		52FBD8951D3DDDED00304651 /* MLSelectPhotoPickerCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLSelectPhotoPickerCollectionView.m; sourceTree = "<group>"; };
-		52FBD8961D3DDDED00304651 /* MLSelectPhotoPickerCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLSelectPhotoPickerCollectionViewCell.h; sourceTree = "<group>"; };
-		52FBD8971D3DDDED00304651 /* MLSelectPhotoPickerCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLSelectPhotoPickerCollectionViewCell.m; sourceTree = "<group>"; };
-		52FBD8981D3DDDED00304651 /* MLSelectPhotoPickerFooterCollectionReusableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLSelectPhotoPickerFooterCollectionReusableView.h; sourceTree = "<group>"; };
-		52FBD8991D3DDDED00304651 /* MLSelectPhotoPickerFooterCollectionReusableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLSelectPhotoPickerFooterCollectionReusableView.m; sourceTree = "<group>"; };
-		52FBD89A1D3DDDED00304651 /* MLSelectPhotoPickerGroupTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLSelectPhotoPickerGroupTableViewCell.h; sourceTree = "<group>"; };
-		52FBD89B1D3DDDED00304651 /* MLSelectPhotoPickerGroupTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLSelectPhotoPickerGroupTableViewCell.m; sourceTree = "<group>"; };
-		52FBD89C1D3DDDED00304651 /* MLSelectPhoto.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MLSelectPhoto.bundle; sourceTree = "<group>"; };
+		72588BBD7120496B59B7F056 /* Pods-WaterLabel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WaterLabel.release.xcconfig"; path = "Pods/Target Support Files/Pods-WaterLabel/Pods-WaterLabel.release.xcconfig"; sourceTree = "<group>"; };
+		D05AC58CCD980CE89B24C8CE /* Pods_WaterLabel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WaterLabel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5F43D4F36F776D0A5871893 /* Pods-WaterLabel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WaterLabel.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WaterLabel/Pods-WaterLabel.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,18 +149,177 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2FBCC8F98945AD77A685174 /* Pods_WaterLabel.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5257C8A21D473C3200CC30AD /* PublicProtocol */ = {
+			isa = PBXGroup;
+			children = (
+				5257C8A31D473C5700CC30AD /* GestureRecognizerProtocl.swift */,
+			);
+			path = PublicProtocol;
+			sourceTree = "<group>";
+		};
+		525938391D6C29A700829E12 /* ZEVC */ = {
+			isa = PBXGroup;
+			children = (
+				522D873C1D6C33210034BCE1 /* ZEHead.swift */,
+				5259383A1D6C29A700829E12 /* FeedBack */,
+				525938421D6C29A700829E12 /* RegistLogin */,
+			);
+			path = ZEVC;
+			sourceTree = "<group>";
+		};
+		5259383A1D6C29A700829E12 /* FeedBack */ = {
+			isa = PBXGroup;
+			children = (
+				5259383B1D6C29A700829E12 /* Controller */,
+				5259383D1D6C29A700829E12 /* Model */,
+				5259383F1D6C29A700829E12 /* View */,
+			);
+			path = FeedBack;
+			sourceTree = "<group>";
+		};
+		5259383B1D6C29A700829E12 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5259383C1D6C29A700829E12 /* ZEFeedBackContoller.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		5259383D1D6C29A700829E12 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5259383E1D6C29A700829E12 /* ZEFeedBackModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5259383F1D6C29A700829E12 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				525938401D6C29A700829E12 /* ZEFeedBackSubViewClass.swift */,
+				525938411D6C29A700829E12 /* ZEFeedBackView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		525938421D6C29A700829E12 /* RegistLogin */ = {
+			isa = PBXGroup;
+			children = (
+				525938431D6C29A700829E12 /* Controller */,
+				525938451D6C29A700829E12 /* Model */,
+				525938461D6C29A700829E12 /* View */,
+			);
+			path = RegistLogin;
+			sourceTree = "<group>";
+		};
+		525938431D6C29A700829E12 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				525938441D6C29A700829E12 /* ZELoginViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		525938451D6C29A700829E12 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				522D873A1D6C31E40034BCE1 /* ZELoginModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		525938461D6C29A700829E12 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				525938471D6C29A700829E12 /* ZELoginView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		525E16661D66AA5E0046B38E /* TZImagePickerController */ = {
+			isa = PBXGroup;
+			children = (
+				525E16671D66AA5E0046B38E /* TZAssetCell.h */,
+				525E16681D66AA5E0046B38E /* TZAssetCell.m */,
+				525E16691D66AA5E0046B38E /* TZAssetModel.h */,
+				525E166A1D66AA5E0046B38E /* TZAssetModel.m */,
+				525E166B1D66AA5E0046B38E /* TZImageManager.h */,
+				525E166C1D66AA5E0046B38E /* TZImageManager.m */,
+				525E166D1D66AA5E0046B38E /* TZImagePickerController.bundle */,
+				525E166E1D66AA5E0046B38E /* TZImagePickerController.h */,
+				525E166F1D66AA5E0046B38E /* TZImagePickerController.m */,
+				525E16701D66AA5E0046B38E /* TZPhotoPickerController.h */,
+				525E16711D66AA5E0046B38E /* TZPhotoPickerController.m */,
+				525E16721D66AA5E0046B38E /* TZPhotoPreviewCell.h */,
+				525E16731D66AA5E0046B38E /* TZPhotoPreviewCell.m */,
+				525E16741D66AA5E0046B38E /* TZPhotoPreviewController.h */,
+				525E16751D66AA5E0046B38E /* TZPhotoPreviewController.m */,
+				525E16761D66AA5E0046B38E /* TZVideoPlayerController.h */,
+				525E16771D66AA5E0046B38E /* TZVideoPlayerController.m */,
+				525E16781D66AA5E0046B38E /* UIView+Layout.h */,
+				525E16791D66AA5E0046B38E /* UIView+Layout.m */,
+			);
+			path = TZImagePickerController;
+			sourceTree = "<group>";
+		};
+		528766571D66C79100884323 /* ShowString */ = {
+			isa = PBXGroup;
+			children = (
+				528766841D66D7E100884323 /* KLCPopup.h */,
+				528766851D66D7E100884323 /* KLCPopup.m */,
+				528766871D66D80600884323 /* ShowString.h */,
+				528766881D66D80600884323 /* ShowString.m */,
+			);
+			path = ShowString;
+			sourceTree = "<group>";
+		};
+		529AD6171D49A4EA00A99735 /* ZEViewKit */ = {
+			isa = PBXGroup;
+			children = (
+				5232179B1D504F5E0021A13D /* ZEHud.swift */,
+				529AD6181D49A4EA00A99735 /* ZEAlertView.swift */,
+				529AD61A1D49A51C00A99735 /* ZEToolBar.swift */,
+			);
+			path = ZEViewKit;
+			sourceTree = "<group>";
+		};
+		529AD61E1D49E53000A99735 /* IGLDropDownMenu */ = {
+			isa = PBXGroup;
+			children = (
+				529AD61F1D49E53000A99735 /* IGLDropDownItem.h */,
+				529AD6201D49E53000A99735 /* IGLDropDownItem.m */,
+				529AD6211D49E53000A99735 /* IGLDropDownMenu.h */,
+				529AD6221D49E53000A99735 /* IGLDropDownMenu.m */,
+			);
+			path = IGLDropDownMenu;
+			sourceTree = "<group>";
+		};
+		529AD6251D49F6CD00A99735 /* OffscreenRendering */ = {
+			isa = PBXGroup;
+			children = (
+				529AD6261D49F6CD00A99735 /* UIImage+RoundedCorner.h */,
+				529AD6271D49F6CD00A99735 /* UIImage+RoundedCorner.m */,
+				529AD6281D49F6CD00A99735 /* UIView+RoundedCorner.h */,
+				529AD6291D49F6CD00A99735 /* UIView+RoundedCorner.m */,
+			);
+			path = OffscreenRendering;
+			sourceTree = "<group>";
+		};
 		52FBD8341D3DDDD700304651 = {
 			isa = PBXGroup;
 			children = (
-				5288EAC01D3EECB4007FBBEC /* MyPlayground.playground */,
+				52808B3A1D52F5CB00E5832B /* MyPlayground.playground */,
 				52FBD83F1D3DDDD700304651 /* WaterLabel */,
 				52FBD83E1D3DDDD700304651 /* Products */,
+				DBF352EBB9836F236FAC8037 /* Pods */,
+				E6D9811F17EA501474881337 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -150,6 +350,8 @@
 			children = (
 				52FBD8531D3DDDED00304651 /* Header.h */,
 				52FBD8541D3DDDED00304651 /* MarcoFile.swift */,
+				527145D11D658EBD00B1B778 /* RootKEy.swift */,
+				527145CD1D65641A00B1B778 /* ColorFile.swift */,
 			);
 			path = Macro;
 			sourceTree = "<group>";
@@ -157,9 +359,11 @@
 		52FBD8551D3DDDED00304651 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				525938391D6C29A700829E12 /* ZEVC */,
 				52FBD8561D3DDDED00304651 /* AddWaterLabel */,
 				52FBD85E1D3DDDED00304651 /* EditLabel */,
 				52FBD8651D3DDDED00304651 /* Home */,
+				529AD6151D49A46C00A99735 /* DemoViewController.swift */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -220,6 +424,7 @@
 		52FBD8611D3DDDED00304651 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				5257C8A01D47368C00CC30AD /* LabelModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -227,8 +432,10 @@
 		52FBD8621D3DDDED00304651 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				52FBD8631D3DDDED00304651 /* LabelEditView.swift */,
-				52FBD8641D3DDDED00304651 /* LabelEditView.xib */,
+				522D718E1D4AFEAF00514703 /* ColorSelectView.swift */,
+				522D71901D4B001300514703 /* SelectView.swift */,
+				525670391D4F2245005DA86F /* FontEditSubView.swift */,
+				527C94791D4DC33A00560B0A /* EditView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -246,7 +453,7 @@
 		52FBD8661D3DDDED00304651 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				52FBD8671D3DDDED00304651 /* ViewController.swift */,
+				52FBD8671D3DDDED00304651 /* HomeViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -261,6 +468,7 @@
 		52FBD8691D3DDDED00304651 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				5293CCC31D66DDE50027F40F /* ZEHomeView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -277,97 +485,31 @@
 		52FBD86D1D3DDDED00304651 /* Vendors */ = {
 			isa = PBXGroup;
 			children = (
-				52FBD86E1D3DDDED00304651 /* MLSelectPhoto */,
+				528766571D66C79100884323 /* ShowString */,
+				525E16661D66AA5E0046B38E /* TZImagePickerController */,
+				529AD6251D49F6CD00A99735 /* OffscreenRendering */,
+				529AD61E1D49E53000A99735 /* IGLDropDownMenu */,
+				529AD6171D49A4EA00A99735 /* ZEViewKit */,
+				5257C8A21D473C3200CC30AD /* PublicProtocol */,
 			);
 			path = Vendors;
 			sourceTree = "<group>";
 		};
-		52FBD86E1D3DDDED00304651 /* MLSelectPhoto */ = {
+		DBF352EBB9836F236FAC8037 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				52FBD86F1D3DDDED00304651 /* Classes */,
-				52FBD89C1D3DDDED00304651 /* MLSelectPhoto.bundle */,
+				D5F43D4F36F776D0A5871893 /* Pods-WaterLabel.debug.xcconfig */,
+				72588BBD7120496B59B7F056 /* Pods-WaterLabel.release.xcconfig */,
 			);
-			path = MLSelectPhoto;
+			name = Pods;
 			sourceTree = "<group>";
 		};
-		52FBD86F1D3DDDED00304651 /* Classes */ = {
+		E6D9811F17EA501474881337 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				52FBD8701D3DDDED00304651 /* Category */,
-				52FBD8751D3DDDED00304651 /* MLSelectPhoto.h */,
-				52FBD8761D3DDDED00304651 /* MLSelectPhotoCommon.h */,
-				52FBD8771D3DDDED00304651 /* Models */,
-				52FBD8801D3DDDED00304651 /* ViewControllers */,
-				52FBD88B1D3DDDED00304651 /* Views */,
+				D05AC58CCD980CE89B24C8CE /* Pods_WaterLabel.framework */,
 			);
-			path = Classes;
-			sourceTree = "<group>";
-		};
-		52FBD8701D3DDDED00304651 /* Category */ = {
-			isa = PBXGroup;
-			children = (
-				52FBD8711D3DDDED00304651 /* UIImage+MLTint.h */,
-				52FBD8721D3DDDED00304651 /* UIImage+MLTint.m */,
-				52FBD8731D3DDDED00304651 /* UIView+MLExtension.h */,
-				52FBD8741D3DDDED00304651 /* UIView+MLExtension.m */,
-			);
-			path = Category;
-			sourceTree = "<group>";
-		};
-		52FBD8771D3DDDED00304651 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				52FBD8781D3DDDED00304651 /* MLSelectPhotoAssets.h */,
-				52FBD8791D3DDDED00304651 /* MLSelectPhotoAssets.m */,
-				52FBD87A1D3DDDED00304651 /* MLSelectPhotoPickerBrowserPhoto.h */,
-				52FBD87B1D3DDDED00304651 /* MLSelectPhotoPickerBrowserPhoto.m */,
-				52FBD87C1D3DDDED00304651 /* MLSelectPhotoPickerDatas.h */,
-				52FBD87D1D3DDDED00304651 /* MLSelectPhotoPickerDatas.m */,
-				52FBD87E1D3DDDED00304651 /* MLSelectPhotoPickerGroup.h */,
-				52FBD87F1D3DDDED00304651 /* MLSelectPhotoPickerGroup.m */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		52FBD8801D3DDDED00304651 /* ViewControllers */ = {
-			isa = PBXGroup;
-			children = (
-				52FBD8811D3DDDED00304651 /* MLSelectPhotoBrowserViewController.h */,
-				52FBD8821D3DDDED00304651 /* MLSelectPhotoBrowserViewController.m */,
-				52FBD8831D3DDDED00304651 /* MLSelectPhotoNavigationViewController.h */,
-				52FBD8841D3DDDED00304651 /* MLSelectPhotoNavigationViewController.m */,
-				52FBD8851D3DDDED00304651 /* MLSelectPhotoPickerAssetsViewController.h */,
-				52FBD8861D3DDDED00304651 /* MLSelectPhotoPickerAssetsViewController.m */,
-				52FBD8871D3DDDED00304651 /* MLSelectPhotoPickerGroupViewController.h */,
-				52FBD8881D3DDDED00304651 /* MLSelectPhotoPickerGroupViewController.m */,
-				52FBD8891D3DDDED00304651 /* MLSelectPhotoPickerViewController.h */,
-				52FBD88A1D3DDDED00304651 /* MLSelectPhotoPickerViewController.m */,
-			);
-			path = ViewControllers;
-			sourceTree = "<group>";
-		};
-		52FBD88B1D3DDDED00304651 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				52FBD88C1D3DDDED00304651 /* MLPhotoPickerImageView.h */,
-				52FBD88D1D3DDDED00304651 /* MLPhotoPickerImageView.m */,
-				52FBD88E1D3DDDED00304651 /* MLSelectPhotoPickerBrowserPhotoImageView.h */,
-				52FBD88F1D3DDDED00304651 /* MLSelectPhotoPickerBrowserPhotoImageView.m */,
-				52FBD8901D3DDDED00304651 /* MLSelectPhotoPickerBrowserPhotoScrollView.h */,
-				52FBD8911D3DDDED00304651 /* MLSelectPhotoPickerBrowserPhotoScrollView.m */,
-				52FBD8921D3DDDED00304651 /* MLSelectPhotoPickerBrowserPhotoView.h */,
-				52FBD8931D3DDDED00304651 /* MLSelectPhotoPickerBrowserPhotoView.m */,
-				52FBD8941D3DDDED00304651 /* MLSelectPhotoPickerCollectionView.h */,
-				52FBD8951D3DDDED00304651 /* MLSelectPhotoPickerCollectionView.m */,
-				52FBD8961D3DDDED00304651 /* MLSelectPhotoPickerCollectionViewCell.h */,
-				52FBD8971D3DDDED00304651 /* MLSelectPhotoPickerCollectionViewCell.m */,
-				52FBD8981D3DDDED00304651 /* MLSelectPhotoPickerFooterCollectionReusableView.h */,
-				52FBD8991D3DDDED00304651 /* MLSelectPhotoPickerFooterCollectionReusableView.m */,
-				52FBD89A1D3DDDED00304651 /* MLSelectPhotoPickerGroupTableViewCell.h */,
-				52FBD89B1D3DDDED00304651 /* MLSelectPhotoPickerGroupTableViewCell.m */,
-			);
-			path = Views;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -377,9 +519,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 52FBD84F1D3DDDD700304651 /* Build configuration list for PBXNativeTarget "WaterLabel" */;
 			buildPhases = (
+				32C5A6DC77F1FC9F8D7D7718 /* Check Pods Manifest.lock */,
 				52FBD8391D3DDDD700304651 /* Sources */,
 				52FBD83A1D3DDDD700304651 /* Frameworks */,
 				52FBD83B1D3DDDD700304651 /* Resources */,
+				5264FC291D4763BC00060480 /* Embed Frameworks */,
+				940BA640A7AEF21DAD3F26A5 /* Embed Pods Frameworks */,
+				024CCBFC0AECAB5BAD7C4CEE /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -402,6 +548,7 @@
 				TargetAttributes = {
 					52FBD83C1D3DDDD700304651 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = WXJL7U66U9;
 					};
 				};
 			};
@@ -428,49 +575,112 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				52FBD8BB1D3DDDED00304651 /* MLSelectPhoto.bundle in Resources */,
 				52FBD8481D3DDDD700304651 /* Assets.xcassets in Resources */,
+				525E167D1D66AA5E0046B38E /* TZImagePickerController.bundle in Resources */,
 				52FBD8A71D3DDDED00304651 /* Main.storyboard in Resources */,
 				52FBD8A61D3DDDED00304651 /* LaunchScreen.storyboard in Resources */,
-				52FBD8A41D3DDDED00304651 /* LabelEditView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		024CCBFC0AECAB5BAD7C4CEE /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WaterLabel/Pods-WaterLabel-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		32C5A6DC77F1FC9F8D7D7718 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		940BA640A7AEF21DAD3F26A5 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WaterLabel/Pods-WaterLabel-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		52FBD8391D3DDDD700304651 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				52FBD8B11D3DDDED00304651 /* MLSelectPhotoPickerGroupViewController.m in Sources */,
-				52FBD8A51D3DDDED00304651 /* ViewController.swift in Sources */,
-				52FBD8AC1D3DDDED00304651 /* MLSelectPhotoPickerDatas.m in Sources */,
-				52FBD8BA1D3DDDED00304651 /* MLSelectPhotoPickerGroupTableViewCell.m in Sources */,
-				52FBD8A91D3DDDED00304651 /* UIView+MLExtension.m in Sources */,
-				52FBD8AD1D3DDDED00304651 /* MLSelectPhotoPickerGroup.m in Sources */,
+				522D873D1D6C33210034BCE1 /* ZEHead.swift in Sources */,
+				528766891D66D80600884323 /* ShowString.m in Sources */,
+				52FBD8A51D3DDDED00304651 /* HomeViewController.swift in Sources */,
+				525E16831D66AA5E0046B38E /* UIView+Layout.m in Sources */,
+				522D873B1D6C31E40034BCE1 /* ZELoginModel.swift in Sources */,
+				5257C8A11D47368C00CC30AD /* LabelModel.swift in Sources */,
 				52FBD89E1D3DDDED00304651 /* EditViewController.swift in Sources */,
 				52FBD8A11D3DDDED00304651 /* WaterLabel.swift in Sources */,
-				52FBD8B61D3DDDED00304651 /* MLSelectPhotoPickerBrowserPhotoView.m in Sources */,
-				52FBD8B71D3DDDED00304651 /* MLSelectPhotoPickerCollectionView.m in Sources */,
-				52FBD8A31D3DDDED00304651 /* LabelEditView.swift in Sources */,
-				52FBD8B91D3DDDED00304651 /* MLSelectPhotoPickerFooterCollectionReusableView.m in Sources */,
+				525E167F1D66AA5E0046B38E /* TZPhotoPickerController.m in Sources */,
+				525938491D6C29A700829E12 /* ZEFeedBackModel.swift in Sources */,
+				527145D21D658EBD00B1B778 /* RootKEy.swift in Sources */,
+				527145CE1D65641A00B1B778 /* ColorFile.swift in Sources */,
+				529AD61B1D49A51C00A99735 /* ZEToolBar.swift in Sources */,
 				52FBD8A01D3DDDED00304651 /* EditImageView.swift in Sources */,
-				52FBD8B41D3DDDED00304651 /* MLSelectPhotoPickerBrowserPhotoImageView.m in Sources */,
-				52FBD8B31D3DDDED00304651 /* MLPhotoPickerImageView.m in Sources */,
-				52FBD8A81D3DDDED00304651 /* UIImage+MLTint.m in Sources */,
-				52FBD8AF1D3DDDED00304651 /* MLSelectPhotoNavigationViewController.m in Sources */,
+				525E16821D66AA5E0046B38E /* TZVideoPlayerController.m in Sources */,
+				5293CCC41D66DDE50027F40F /* ZEHomeView.swift in Sources */,
+				5259384B1D6C29A700829E12 /* ZEFeedBackView.swift in Sources */,
+				5256703A1D4F2245005DA86F /* FontEditSubView.swift in Sources */,
 				52FBD8411D3DDDD700304651 /* AppDelegate.swift in Sources */,
-				52FBD8B51D3DDDED00304651 /* MLSelectPhotoPickerBrowserPhotoScrollView.m in Sources */,
 				52FBD8A21D3DDDED00304651 /* EditLabelViewController.swift in Sources */,
+				525938481D6C29A700829E12 /* ZEFeedBackContoller.swift in Sources */,
+				525E16801D66AA5E0046B38E /* TZPhotoPreviewCell.m in Sources */,
 				52FBD89F1D3DDDED00304651 /* EditModel.swift in Sources */,
-				52FBD8B21D3DDDED00304651 /* MLSelectPhotoPickerViewController.m in Sources */,
+				529AD62B1D49F6CD00A99735 /* UIView+RoundedCorner.m in Sources */,
 				52FBD89D1D3DDDED00304651 /* MarcoFile.swift in Sources */,
-				52FBD8AA1D3DDDED00304651 /* MLSelectPhotoAssets.m in Sources */,
-				52FBD8AE1D3DDDED00304651 /* MLSelectPhotoBrowserViewController.m in Sources */,
-				52FBD8B01D3DDDED00304651 /* MLSelectPhotoPickerAssetsViewController.m in Sources */,
-				52FBD8B81D3DDDED00304651 /* MLSelectPhotoPickerCollectionViewCell.m in Sources */,
-				52FBD8AB1D3DDDED00304651 /* MLSelectPhotoPickerBrowserPhoto.m in Sources */,
+				525E167B1D66AA5E0046B38E /* TZAssetModel.m in Sources */,
+				528766861D66D7E100884323 /* KLCPopup.m in Sources */,
+				527C947A1D4DC33A00560B0A /* EditView.swift in Sources */,
+				525E167C1D66AA5E0046B38E /* TZImageManager.m in Sources */,
+				529AD6231D49E53000A99735 /* IGLDropDownItem.m in Sources */,
+				529AD62A1D49F6CD00A99735 /* UIImage+RoundedCorner.m in Sources */,
+				5259384D1D6C29A700829E12 /* ZELoginView.swift in Sources */,
+				5257C8A41D473C5700CC30AD /* GestureRecognizerProtocl.swift in Sources */,
+				525E167A1D66AA5E0046B38E /* TZAssetCell.m in Sources */,
+				525E16811D66AA5E0046B38E /* TZPhotoPreviewController.m in Sources */,
+				522D71911D4B001300514703 /* SelectView.swift in Sources */,
+				522D718F1D4AFEAF00514703 /* ColorSelectView.swift in Sources */,
+				5232179C1D504F5E0021A13D /* ZEHud.swift in Sources */,
+				5259384A1D6C29A700829E12 /* ZEFeedBackSubViewClass.swift in Sources */,
+				529AD6161D49A46C00A99735 /* DemoViewController.swift in Sources */,
+				5259384C1D6C29A700829E12 /* ZELoginViewController.swift in Sources */,
+				529AD6191D49A4EA00A99735 /* ZEAlertView.swift in Sources */,
+				529AD6241D49E53000A99735 /* IGLDropDownMenu.m in Sources */,
+				525E167E1D66AA5E0046B38E /* TZImagePickerController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -514,7 +724,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -553,7 +763,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -562,24 +772,42 @@
 		};
 		52FBD8501D3DDDD700304651 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D5F43D4F36F776D0A5871893 /* Pods-WaterLabel.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Gaojie Sun (872222P98D)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Gaojie Sun (872222P98D)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = WaterLabel/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.Lafree.www.WaterLabel;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lafree.www.watermark;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "cdf13aee-6fa1-488e-bd4b-6035929fb7d8";
 				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/WaterLabel/Macro/Header.h";
 			};
 			name = Debug;
 		};
 		52FBD8511D3DDDD700304651 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 72588BBD7120496B59B7F056 /* Pods-WaterLabel.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Gaojie Sun (872222P98D)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Gaojie Sun (872222P98D)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = WaterLabel/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.Lafree.www.WaterLabel;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lafree.www.watermark;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "cdf13aee-6fa1-488e-bd4b-6035929fb7d8";
 				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/WaterLabel/Macro/Header.h";
 			};
 			name = Release;

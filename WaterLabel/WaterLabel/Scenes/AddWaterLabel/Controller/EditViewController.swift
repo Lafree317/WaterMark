@@ -7,59 +7,98 @@
 //
 
 import UIKit
-
-class EditViewController: UIViewController,EditProtocol {
-    var assets:Array<MLSelectPhotoAssets>!
-    var imageView:EditImageView!
-    var waterLabel:WaterLabel!
-    var index:Int = 0
-    
+extension EditViewController {
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
     }
+    override func viewWillDisappear(animated: Bool) {
+        super.viewWillDisappear(animated)
+        editView.removeObserver()
+    }
+}
+class EditViewController: UIViewController {
+    var assets:[AnyObject]!
+    var imageView:EditImageView!
+    var editView:EditView!
+    var labelArr:[WaterLabel] = []
+    var toolBar:ZEToolBar!
+    var index:Int = 0
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setRoot()
-        setImageView()
-        setWaterLabel()
-        // Do any additional setup after loading the view.
+        setUI()
     }
     func setRoot(){
         self.view.clipsToBounds = true
-        let tap = UITapGestureRecognizer(target: self, action: #selector(tapAction(_:)))
-        tap.numberOfTapsRequired = 2
-        
-        view.addGestureRecognizer(tap)
     }
-    
+    func setUI(){
+        setImageView()
+        addWaterLabel()
+        setToolBar()
+        setEditView()
+    }
     func setImageView(){
         imageView = EditImageView(frame: CGRect(x: 0, y: 0, width: 0, height: 0))
         changeImage(0)
-        
         view.insertSubview(imageView, atIndex: 0)
     }
-   
-    
-    func setWaterLabel(){
-        waterLabel = WaterLabel(frame: CGRect(x: 0, y: 0, width: 200, height: 30))
+    func addWaterLabel(){
+        weak var weakSelf = self
+        guard let wself = weakSelf else{
+            return
+        }
+        let waterLabel = WaterLabel(frame: CGRect(x: 0, y: 0, width: 200, height: 30))
+        waterLabel.model = LabelModel()
         waterLabel.center = view.center
         waterLabel.longPressCallBack = {
-            self.performSegueWithIdentifier(editLabelVCId, sender: nil)
+            for label in wself.labelArr{
+                label.textField.text = label.text
+                label.changeEidtType(false)
+            }
+            wself.editView.hidden = false
+            wself.editView.waterLabel = waterLabel
         }
         view.insertSubview(waterLabel, atIndex: 1)
+        labelArr.append(waterLabel)
     }
-    
-  
-    
-    
-    @IBAction func lastImage(sender: UIButton) {
-        changeImage(-1)
+    func setEditView(){
+        editView = EditView(frame:CGRect(x: 0, y: 64, width: view.frame.size.width, height:100))
+        editView.backgroundColor = UIColor.groupTableViewBackgroundColor()
+        editView.hidden = true
+        view.addSubview(editView)
     }
-    @IBAction func nextImage(sender: UIButton) {
-        changeImage(+1)
-    }
-    @IBAction func save(sender: UIButton) {
-        addWaterImage()
+    func setToolBar(){
+        weak var weakSelf = self
+        guard let wself = weakSelf else{
+            return
+        }
+        toolBar = ZEToolBar(frame: CGRect(x: 0, y: screenHeight-44, width: screenWidth, height: 44))
+        let imageNameArr = ["last","refresh","add","save","next"]
+        toolBar.imageNameArr = imageNameArr
+       
+        toolBar.actionCallBack = { imageName in
+            switch imageName {
+            case "last":
+                wself.changeImage(-1)
+                break
+            case "refresh":
+                wself.refreshUI()
+                break
+            case "add":
+                wself.addWaterLabel()
+                break
+            case "save":
+                wself.save()
+                break
+            case "next":
+                wself.changeImage(+1)
+                break
+            default: break
+            }
+        }
+        view.addSubview(toolBar)
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -67,17 +106,13 @@ class EditViewController: UIViewController,EditProtocol {
     }
     
     @IBAction func deleteAction(sender: UIBarButtonItem) {
-        print(delete)
+        
     }
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
     }
-    */
 
 }

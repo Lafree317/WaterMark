@@ -32,27 +32,28 @@ extension EditImageView{
     }
     func pinch(pinch:UIPinchGestureRecognizer){
         self.transform = CGAffineTransformScale(self.transform, pinch.scale, pinch.scale)
-        if let image = image {
-            scale = 1/(image.size.width / frame.size.width)
-        }
-        print(scale)
+        print(pinch.scale)
+        print("变换后比例:"+"\(scale)")
         pinch.scale = 1
     }
 }
 class EditImageView: UIImageView {
-    var scale:CGFloat = 0
+    var scale:CGFloat {
+        get{
+            return frame.width / image!.size.width
+        }
+    }
     override init(frame: CGRect) {
         super.init(frame: frame)
-        addPan()
-        addPinch()
+//        addPan()
+//        addPinch() 之后再解决pinch之后导致的比例问题
     }
     func setNewImage(newImage:UIImage){
-        scale = screenWidth / newImage.size.width
-        print(scale)
-        frame = CGRectMake(0, 0, screenWidth, newImage.size.height * scale)
         image = newImage
+        self.frame.size.width = screenWidth
+        print("默认比例:"+"\(scale)")
+        frame = CGRectMake(0, 0, screenWidth, newImage.size.height * scale)
     }
-    
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
