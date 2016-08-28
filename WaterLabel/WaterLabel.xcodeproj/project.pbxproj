@@ -50,7 +50,7 @@
 		52FBD89E1D3DDDED00304651 /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FBD8581D3DDDED00304651 /* EditViewController.swift */; };
 		52FBD89F1D3DDDED00304651 /* EditModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FBD85A1D3DDDED00304651 /* EditModel.swift */; };
 		52FBD8A01D3DDDED00304651 /* EditImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FBD85C1D3DDDED00304651 /* EditImageView.swift */; };
-		52FBD8A11D3DDDED00304651 /* WaterLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FBD85D1D3DDDED00304651 /* WaterLabel.swift */; };
+		52FBD8A11D3DDDED00304651 /* WaterMark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FBD85D1D3DDDED00304651 /* WaterMark.swift */; };
 		52FBD8A21D3DDDED00304651 /* EditLabelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FBD8601D3DDDED00304651 /* EditLabelViewController.swift */; };
 		52FBD8A51D3DDDED00304651 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FBD8671D3DDDED00304651 /* HomeViewController.swift */; };
 		52FBD8A61D3DDDED00304651 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52FBD86B1D3DDDED00304651 /* LaunchScreen.storyboard */; };
@@ -134,7 +134,7 @@
 		52FBD8581D3DDDED00304651 /* EditViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditViewController.swift; sourceTree = "<group>"; };
 		52FBD85A1D3DDDED00304651 /* EditModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditModel.swift; sourceTree = "<group>"; };
 		52FBD85C1D3DDDED00304651 /* EditImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditImageView.swift; sourceTree = "<group>"; };
-		52FBD85D1D3DDDED00304651 /* WaterLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaterLabel.swift; sourceTree = "<group>"; };
+		52FBD85D1D3DDDED00304651 /* WaterMark.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaterMark.swift; sourceTree = "<group>"; };
 		52FBD8601D3DDDED00304651 /* EditLabelViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditLabelViewController.swift; sourceTree = "<group>"; };
 		52FBD8671D3DDDED00304651 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		52FBD86B1D3DDDED00304651 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -398,7 +398,7 @@
 			isa = PBXGroup;
 			children = (
 				52FBD85C1D3DDDED00304651 /* EditImageView.swift */,
-				52FBD85D1D3DDDED00304651 /* WaterLabel.swift */,
+				52FBD85D1D3DDDED00304651 /* WaterMark.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -644,7 +644,7 @@
 				522D873B1D6C31E40034BCE1 /* ZELoginModel.swift in Sources */,
 				5257C8A11D47368C00CC30AD /* LabelModel.swift in Sources */,
 				52FBD89E1D3DDDED00304651 /* EditViewController.swift in Sources */,
-				52FBD8A11D3DDDED00304651 /* WaterLabel.swift in Sources */,
+				52FBD8A11D3DDDED00304651 /* WaterMark.swift in Sources */,
 				525E167F1D66AA5E0046B38E /* TZPhotoPickerController.m in Sources */,
 				525938491D6C29A700829E12 /* ZEFeedBackModel.swift in Sources */,
 				527145D21D658EBD00B1B778 /* RootKEy.swift in Sources */,

@@ -1,6 +1,6 @@
 //
 //  EditView.swift
-//  WaterLabel
+//  WaterMark
 //
 //  Created by 胡春源 on 16/7/31.
 //  Copyright © 2016年 胡春源. All rights reserved.
@@ -18,9 +18,9 @@ class EditView: UIView {
     var fontSizeLabel:FontEditLabel!
     var fontSizeSlider:UISlider!
     var anyChangeCallBack:(() -> Void)? = {}
-    var waterLabel:WaterLabel!{
+    var waterMark:WaterMark!{
         willSet{
-            self.waterLabel = newValue
+            self.waterMark = newValue
             refreshUI()
         }
     }
@@ -47,18 +47,18 @@ class EditView: UIView {
     }
     func keyboardWillShow(){
         self.editTextButton.select = true
-        self.waterLabel.model.textColor = UIColor.clearColor()
-        self.waterLabel.model.backColor = UIColor.clearColor()
+        self.waterMark.model.textColor = UIColor.clearColor()
+        self.waterMark.model.backColor = UIColor.clearColor()
     }
     func keyboardWillHid(){
         self.editTextButton.select = false
-        self.waterLabel.model.textColor = self.fontColorView.customView.backgroundColor!
-        self.waterLabel.model.backColor = self.fontBackColorView.customView.backgroundColor!
+        self.waterMark.model.textColor = self.fontColorView.customView.backgroundColor!
+        self.waterMark.model.backColor = self.fontBackColorView.customView.backgroundColor!
     }
    
     func blodClick(button:FontEditButton){
         button.select = !button.select
-        waterLabel.model.blod = button.select
+        waterMark.model.blod = button.select
         if button.select == true {
             italicButton.select = false
         }
@@ -66,7 +66,7 @@ class EditView: UIView {
     func italicClick(button:FontEditButton){
     
         button.select = !button.select
-        waterLabel.model.italic = button.select
+        waterMark.model.italic = button.select
         if button.select == true {
             blodButton.select = false
         }
@@ -74,29 +74,29 @@ class EditView: UIView {
     }
     func underLineClick(button:FontEditButton){
         button.select = !button.select
-        waterLabel.model.underLine = button.select
+        waterMark.model.underLine = button.select
         
     }
     func editTextClick(button:FontEditButton){
         editTextButton.select = !editTextButton.select
-        waterLabel.changeEidtType(editTextButton.select)
+        waterMark.changeEidtType(editTextButton.select)
     }
     func saveClick(button:UIButton){
-        self.waterLabel.textField.hidden = true
+        self.waterMark.textField.hidden = true
         
         self.hidden = true
     }
     func sliderValueChange(slider:UISlider){
         fontSizeLabel.text = String(Int(slider.value))
-        waterLabel.model.fontSize = CGFloat(slider.value)
+        waterMark.model.fontSize = CGFloat(slider.value)
     }
     func refreshUI(){
-        blodButton.select = waterLabel.model.blod
-        italicButton.select = waterLabel.model.italic
-        underLineButton.select = waterLabel.model.underLine
-        fontSizeSlider.value = Float(waterLabel.model.fontSize)
-        fontColorView.customView.backgroundColor = waterLabel.model.textColor
-        fontBackColorView.customView.backgroundColor = waterLabel.model.backColor
+        blodButton.select = waterMark.model.blod
+        italicButton.select = waterMark.model.italic
+        underLineButton.select = waterMark.model.underLine
+        fontSizeSlider.value = Float(waterMark.model.fontSize)
+        fontColorView.customView.backgroundColor = waterMark.model.textColor
+        fontBackColorView.customView.backgroundColor = waterMark.model.backColor
     }
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
@@ -151,7 +151,7 @@ extension EditView{
         fontColorView.addSelectedItemChangeBlock { (i) in
             let dic = titleColorArr[i].values.first!
             let color = ColorFile.dicToColor(dic)
-            wself.waterLabel?.model.textColor = color
+            wself.waterMark?.model.textColor = color
             wself.fontColorView.customView.color = color
             
         }
@@ -177,7 +177,7 @@ extension EditView{
         fontBackColorView.addSelectedItemChangeBlock { (i) in
             let dic = titleColorArr[i].values.first!
             let color = ColorFile.dicToColor(dic)
-            wself.waterLabel?.model.backColor = color
+            wself.waterMark?.model.backColor = color
             wself.fontBackColorView.customView.color = color
             
         }

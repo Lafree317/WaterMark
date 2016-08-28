@@ -1,6 +1,6 @@
 //
 //  EditLabelViewController.swift
-//  WaterLabel
+//  WaterMark
 //
 //  Created by 胡春源 on 16/7/17.
 //  Copyright © 2016年 huchunyuan. All rights reserved.
@@ -10,22 +10,22 @@ import UIKit
 
 
 class EditLabelViewController: UIViewController,UITextViewDelegate {
-    var waterLabel:WaterLabel!
+    var waterMark:WaterMark!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        setWaterLabel()
+        setWaterMark()
         // Do any additional setup after loading the view.
     }
-    func setWaterLabel(){
-        waterLabel = WaterLabel(frame: CGRect(x: 0, y: 0, width: 200, height: 30))
-        waterLabel.center = view.center
+    func setWaterMark(){
+        waterMark = WaterMark(frame: CGRect(x: 0, y: 0, width: 200, height: 30))
+        waterMark.center = view.center
         weak var WeakSelf = self
-        waterLabel.longPressCallBack = {
-            WeakSelf?.waterLabel.changeEidtType(true)
+        waterMark.longPressCallBack = {
+            WeakSelf?.waterMark.changeEidtType(true)
         }
-        view.addSubview(waterLabel)
+        view.addSubview(waterMark)
     }
 
     override func didReceiveMemoryWarning() {

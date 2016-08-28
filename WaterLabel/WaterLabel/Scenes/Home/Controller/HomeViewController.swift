@@ -1,6 +1,6 @@
 //
 //  ViewController.swift
-//  WaterLabel
+//  WaterMark
 //
 //  Created by huchunyuan on 16/1/4.
 //  Copyright © 2016年 huchunyuan. All rights reserved.

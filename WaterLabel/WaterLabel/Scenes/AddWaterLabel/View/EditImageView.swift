@@ -1,6 +1,6 @@
 //
 //  EditImageView.swift
-//  WaterLabel
+//  WaterMark
 //
 //  Created by 胡春源 on 16/7/17.
 //  Copyright © 2016年 huchunyuan. All rights reserved.
@@ -45,18 +45,14 @@ class EditImageView: UIImageView {
     }
     override init(frame: CGRect) {
         super.init(frame: frame)
-//        addPan()
-//        addPinch() 之后再解决pinch之后导致的比例问题
     }
     func setNewImage(newImage:UIImage){
         image = newImage
         self.frame.size.width = screenWidth
-        print("默认比例:"+"\(scale)")
         frame = CGRectMake(0, 0, screenWidth, newImage.size.height * scale)
     }
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-
 }
 

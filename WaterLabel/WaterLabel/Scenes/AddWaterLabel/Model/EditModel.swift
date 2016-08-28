@@ -1,6 +1,6 @@
 //
 //  EditModel.swift
-//  WaterLabel
+//  WaterMark
 //
 //  Created by 胡春源 on 16/7/17.
 //  Copyright © 2016年 huchunyuan. All rights reserved.
@@ -61,7 +61,7 @@ extension EditViewController {
         dispatch_async(dispatch_queue_create("addLabel",nil)) {
             UIGraphicsBeginImageContext(image.size)// 开始绘制
             image.drawInRect(CGRect(origin: CGPoint.zero, size: image.size))
-            for label in wself.labelArr {
+            for label in wself.labelArr { // 添加多个水印
                 let rect = wself.imageView.convertRect(label.frame, fromView: nil)
                 let reScale = 1/wself.imageView.scale
                 let labelRect = CGRectMake((rect.origin.x)*reScale, (rect.origin.y*reScale), rect.size.width*reScale, rect.height*reScale)
@@ -98,6 +98,6 @@ extension EditViewController {
             label.removeFromSuperview()
         }
         labelArr = []
-        addWaterLabel()
+        addWaterMark()
     }
 }

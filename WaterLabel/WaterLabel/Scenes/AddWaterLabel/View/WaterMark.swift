@@ -1,6 +1,5 @@
 //
-//  WaterLabel.swift
-//  WaterLabel
+//  WaterMark
 //
 //  Created by 胡春源 on 16/7/17.
 //  Copyright © 2016年 huchunyuan. All rights reserved.
@@ -8,7 +7,7 @@
 
 import UIKit
 
-extension WaterLabel{
+extension WaterMark{
     func addLongPress(){
         self.userInteractionEnabled = true
         let longPress = UILongPressGestureRecognizer(target: self, action: #selector(longPress(_:)))
@@ -27,7 +26,7 @@ extension WaterLabel{
         }
     }
 }
-class WaterLabel: UILabel,UITextFieldDelegate {
+class WaterMark: UILabel,UITextFieldDelegate {
     var textField:UITextField!
     var longPressCallBack:(() -> Void)? = {}
     var model:LabelModel = LabelModel(){
@@ -37,9 +36,9 @@ class WaterLabel: UILabel,UITextFieldDelegate {
     }
     override init(frame: CGRect) {
         super.init(frame: frame)
-        self.textAlignment = .Center
-        self.center = self.center
-        self.addTextView()
+        textAlignment = .Center
+        center = self.center
+        addTextView()
         addLongPress()
         addPan()
     }
@@ -58,16 +57,17 @@ class WaterLabel: UILabel,UITextFieldDelegate {
         self.attributedText = att
         viewChange()
     }
-    
+    // 通过传入的bool进行label的文字变换
     func changeEidtType(type:Bool){
         if type == true {
+            self.textField.font = self.font
             self.textField.text = self.text
             self.textField.becomeFirstResponder()
         }else{
+            textField.endEditing(true)
             let dic = model.getAttributes(1)
             let att = NSAttributedString(string: self.textField.text!, attributes: dic)
             self.attributedText = att
-            self.textField.resignFirstResponder()
         }
         textField.hidden = !type
         viewChange()

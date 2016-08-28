@@ -1,6 +1,6 @@
 //
 //  EidtViewController.swift
-//  WaterLabel
+//  WaterMark
 //
 //  Created by 胡春源 on 16/7/16.
 //  Copyright © 2016年 huchunyuan. All rights reserved.
@@ -20,7 +20,7 @@ class EditViewController: UIViewController {
     var assets:[AnyObject]!
     var imageView:EditImageView!
     var editView:EditView!
-    var labelArr:[WaterLabel] = []
+    var labelArr:[WaterMark] = []
     var toolBar:ZEToolBar!
     var index:Int = 0
     
@@ -35,7 +35,7 @@ class EditViewController: UIViewController {
     }
     func setUI(){
         setImageView()
-        addWaterLabel()
+        addWaterMark()
         setToolBar()
         setEditView()
     }
@@ -44,24 +44,24 @@ class EditViewController: UIViewController {
         changeImage(0)
         view.insertSubview(imageView, atIndex: 0)
     }
-    func addWaterLabel(){
+    func addWaterMark(){
         weak var weakSelf = self
         guard let wself = weakSelf else{
             return
         }
-        let waterLabel = WaterLabel(frame: CGRect(x: 0, y: 0, width: 200, height: 30))
-        waterLabel.model = LabelModel()
-        waterLabel.center = view.center
-        waterLabel.longPressCallBack = {
+        let waterMark = WaterMark(frame: CGRect(x: 0, y: 0, width: 200, height: 30))
+        waterMark.model = LabelModel()
+        waterMark.center = view.center
+        waterMark.longPressCallBack = {
             for label in wself.labelArr{
                 label.textField.text = label.text
                 label.changeEidtType(false)
             }
             wself.editView.hidden = false
-            wself.editView.waterLabel = waterLabel
+            wself.editView.waterMark = waterMark
         }
-        view.insertSubview(waterLabel, atIndex: 1)
-        labelArr.append(waterLabel)
+        view.insertSubview(waterMark, atIndex: 1)
+        labelArr.append(waterMark)
     }
     func setEditView(){
         editView = EditView(frame:CGRect(x: 0, y: 64, width: view.frame.size.width, height:100))
@@ -87,7 +87,7 @@ class EditViewController: UIViewController {
                 wself.refreshUI()
                 break
             case "add":
-                wself.addWaterLabel()
+                wself.addWaterMark()
                 break
             case "save":
                 wself.save()

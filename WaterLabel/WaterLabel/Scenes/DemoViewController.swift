@@ -1,6 +1,6 @@
 //
 //  DemoViewController.swift
-//  WaterLabel
+//  WaterMark
 //
 //  Created by 胡春源 on 16/7/28.
 //  Copyright © 2016年 胡春源. All rights reserved.
@@ -30,7 +30,7 @@ extension DemoViewController{
 
 class DemoViewController: UIViewController {
     var editView:EditView!
-    var waterLabel:WaterLabel!
+    var waterMark:WaterMark!
     
     override func viewDidLoad() {
         super.viewDidLoad()
