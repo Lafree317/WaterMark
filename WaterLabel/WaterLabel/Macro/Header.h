@@ -8,7 +8,7 @@
 
 #ifndef Header_h
 #define Header_h
-
+#import "AVOSCloud.h"
 
 
 
@@ -20,6 +20,6 @@
 
 #import "TZImageManager.h"
 #import "ShowString.h"
-
+#import <Bugly/Bugly.h>
 
 #endif /* Header_h */

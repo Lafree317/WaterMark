@@ -73,11 +73,10 @@ extension EditViewController {
             dispatch_async(dispatch_get_main_queue(), {
                 ZEHud.sharedInstance.hideHud()
                 ShowString.sharedManager().showStringView("保存成功")
-                wself.imageView.image = imageA
                 wself.assets.removeAtIndex(wself.index)
                 wself.changeImage(wself.index)
                 if weakSelf!.assets.count == 0 {
-                    weakSelf?.performSelector(#selector(weakSelf?.nodataPop), withObject: nil, afterDelay: 0.75)
+                    weakSelf?.performSelector(#selector(weakSelf?.nodataPop), withObject: nil, afterDelay: 0.3)
                     }
             })
         }

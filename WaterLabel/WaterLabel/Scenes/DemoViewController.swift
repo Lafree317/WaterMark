@@ -15,26 +15,32 @@ extension DemoViewController{
     }
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
-        let imagePickerVC = TZImagePickerController(maxImagesCount: 50, delegate: nil)
-        imagePickerVC.isSelectOriginalPhoto = true
-        imagePickerVC.allowTakePicture = true
-        imagePickerVC.sortAscendingByModificationDate = true
-        imagePickerVC.didFinishPickingPhotosHandle = {
-            photos,assets,isSelectOriginalPhoto in
-        }
-        self.presentViewController(imagePickerVC, animated: true) {
-            
-        }
+        
+        
+
     }
 }
 
 class DemoViewController: UIViewController {
-    var editView:EditView!
-    var waterMark:WaterMark!
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
+        let editView = EditView(frame:CGRect(x: 0, y: 64, width: view.frame.size.width, height:130))
+        editView.backgroundColor = UIColor.groupTableViewBackgroundColor()
+        view.addSubview(editView)
+        let waterMark = WaterMark(frame: CGRect(x: 0, y: 0, width: 200, height: 30))
+        waterMark.model = LabelModel()
+        waterMark.center = view.center
+        
+        waterMark.longPressCallBack = {
+            editView.hidden = false
+            
+        }
+        editView.waterMark = waterMark
+        view.addSubview(waterMark)
         // Do any additional setup after loading the view.
     }
     override func didReceiveMemoryWarning() {
@@ -53,41 +59,4 @@ class DemoViewController: UIViewController {
     }
     
 
-}
-class ZECustomView: UIView {
-    var title:String?{
-        willSet{
-            if let t = newValue  {
-                self.title = t
-                self.label.text = title
-            }
-        }
-    }
-    var color:UIColor?{
-        willSet{
-            if let c = newValue {
-                self.color = c
-                self.label.textColor = color
-            }
-        }
-    }
-    var label:UILabel!
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-        
-        
-        
-        label = UILabel(frame: bounds)
-        label.font = UIFont.systemFontOfSize(13)
-        label.textAlignment = .Center
-        self.addSubview(label)
-
-        
-        
-        self.jm_setJMRadius(JMRadius(topLeftRadius: 5, topRightRadius: 5, bottomLeftRadius:5, bottomRightRadius: 5), withBorderColor: UIColor.clearColor(), borderWidth: 1, backgroundColor: .groupTableViewBackgroundColor(), backgroundImage: nil, contentMode: .ScaleAspectFill)
-    }
-    
-    required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
 }

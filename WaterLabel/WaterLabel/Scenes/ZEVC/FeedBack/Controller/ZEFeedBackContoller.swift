@@ -7,14 +7,15 @@
 //
 
 import UIKit
-import LeanCloud
+
 
 
 
 extension ZEFeedBackContoller{
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
-        LeanCloud.initialize(applicationID: app_feedback_id, applicationKey: app_feedback_key)
+        AVOSCloud.setApplicationId(app_feedback_id, clientKey: app_feedback_key)
+        
     }
     
     override func viewWillDisappear(animated: Bool) {
@@ -22,7 +23,7 @@ extension ZEFeedBackContoller{
         guard let appRid = app_root_id,let appRKey = app_root_key else{
             return
         }
-        LeanCloud.initialize(applicationID: appRid, applicationKey: appRKey)
+        AVOSCloud.setApplicationId(appRid, clientKey: appRKey)
     }
     
     override func viewDidAppear(animated: Bool) {

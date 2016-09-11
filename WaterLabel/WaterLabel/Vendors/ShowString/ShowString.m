@@ -34,7 +34,7 @@
     label.numberOfLines = 0;
     label.text = str;
     KLCPopup *view = [KLCPopup popupWithContentView:label showType:(KLCPopupShowTypeFadeIn) dismissType:(KLCPopupDismissTypeFadeOut) maskType:(KLCPopupMaskTypeNone) dismissOnBackgroundTouch:NO dismissOnContentTouch:YES];
-    [view showWithDuration:0.75];
+    [view showWithDuration:0.5];
 }
 
 - (float)widthForString:(NSString *)value fontSize:(float)fontSize{

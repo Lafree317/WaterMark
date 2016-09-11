@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="RI6-7A-cyF">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="RI6-7A-cyF">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -23,7 +23,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kim-Ak-cfw">
-                                <rect key="frame" x="90" y="435.5" width="195" height="73"/>
+                                <rect key="frame" x="90" y="436" width="195" height="73"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="73" id="5Ex-lJ-lq6"/>
                                     <constraint firstAttribute="width" constant="195" id="Qv4-Wv-vmT"/>
@@ -36,14 +36,14 @@
                                     <action selector="contactAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zl5-q1-kOX"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.59999999999999998" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="反馈Bug,提出建议,或你想要什么功能." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H4O-xe-3of">
-                                <rect key="frame" x="100" y="516.5" width="175" height="38.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.59999999999999998" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="反馈Bug,提出建议,或你想要什么功能." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H4O-xe-3of">
+                                <rect key="frame" x="100" y="517" width="175" height="38"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IvO-9s-YKc">
-                                <rect key="frame" x="90" y="265.5" width="195" height="73"/>
+                                <rect key="frame" x="90" y="266" width="195" height="73"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="IvO-9s-YKc" secondAttribute="height" multiplier="195:73" id="cb7-T8-Z3w"/>
                                     <constraint firstAttribute="width" constant="195" id="m2P-lA-Gvr"/>
@@ -62,14 +62,14 @@
                                     <action selector="addWaterAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YPb-1r-1of"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.59999999999999998" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="选择图片添加水印,长按水印开启编辑模式" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e5Y-Yn-EYo">
-                                <rect key="frame" x="100" y="346.5" width="175" height="38.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.59999999999999998" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="选择图片添加水印,长按水印开启编辑模式" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e5Y-Yn-EYo">
+                                <rect key="frame" x="100" y="347" width="175" height="38"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" alpha="0.59999999999999998" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="暂无公告" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EQ5-FE-aMt">
-                                <rect key="frame" x="90" y="150.5" width="195" height="65"/>
+                                <rect key="frame" x="90" y="151" width="195" height="65"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="65" id="QgO-JD-Bpu"/>
                                 </constraints>
@@ -205,23 +205,24 @@
             </objects>
             <point key="canvasLocation" x="1510.5" y="630.5"/>
         </scene>
-        <!--Login View Controller-->
-        <scene sceneID="lCp-GF-fVv">
+        <!--Demo View Controller-->
+        <scene sceneID="yXy-mN-Qpv">
             <objects>
-                <viewController id="geL-ME-Qml" customClass="ZELoginViewController" customModule="WaterLabel" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="zFk-cO-Fna" customClass="DemoViewController" customModule="WaterLabel" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="MUz-9X-caq"/>
-                        <viewControllerLayoutGuide type="bottom" id="MGi-2Y-lYA"/>
+                        <viewControllerLayoutGuide type="top" id="Rfg-xS-wEe"/>
+                        <viewControllerLayoutGuide type="bottom" id="h4U-dg-RHl"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="NvD-FT-M4W">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <view key="view" contentMode="scaleToFill" id="6If-X1-PpY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="mrr-o3-nV7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gKQ-9f-0M8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1005" y="1230"/>
+            <point key="canvasLocation" x="-162.5" y="979.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="76S-LM-Oe0">

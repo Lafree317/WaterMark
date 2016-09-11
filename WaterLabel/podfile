@@ -1,8 +1,10 @@
+platform :ios, ‘8.0’
 target 'WaterLabel' do
     use_frameworks!   
-    pod 'LeanCloud', :git => 'git@github.com:leancloud/swift-sdk.git'
+    pod 'AVOSCloud'
     pod 'RxSwift'
     pod 'RxCocoa'
     pod 'SnapKit'
     pod 'MBProgressHUD'
+    pod 'Bugly'
 end

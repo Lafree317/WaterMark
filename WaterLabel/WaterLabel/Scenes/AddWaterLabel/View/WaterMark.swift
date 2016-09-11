@@ -19,6 +19,7 @@ extension WaterMark{
         if longPress.state == .Began {
             print("长按开始")
             if let callBack = longPressCallBack {
+                self.changeEidtType(true)
                 callBack()
             }
         }else{
@@ -37,7 +38,6 @@ class WaterMark: UILabel,UITextFieldDelegate {
     override init(frame: CGRect) {
         super.init(frame: frame)
         textAlignment = .Center
-        center = self.center
         addTextView()
         addLongPress()
         addPan()
@@ -47,6 +47,7 @@ class WaterMark: UILabel,UITextFieldDelegate {
         textField.borderStyle = .RoundedRect
         textField.hidden = true
         textField.delegate = self
+        textField.addTarget(self, action: #selector(textchange), forControlEvents: .EditingChanged)
         textField.textAlignment = .Center
         self.addSubview(textField)
         viewChange()
@@ -55,22 +56,31 @@ class WaterMark: UILabel,UITextFieldDelegate {
         let dic = labelModel.getAttributes(1)
         let att = NSMutableAttributedString(string: labelModel.text, attributes: dic)
         self.attributedText = att
+        self.textField.attributedText = self.attributedText
+        viewChange()
+    }
+    func textchange(){
+        fieldStatusToLabel()
+        
+    }
+    func fieldStatusToLabel(){
+        let dic = model.getAttributes(1)
+        let att = NSAttributedString(string: self.textField.text!, attributes: dic)
+        self.attributedText = att
+        self.model.text = self.textField.text
         viewChange()
     }
     // 通过传入的bool进行label的文字变换
     func changeEidtType(type:Bool){
+        textField.hidden = !type
         if type == true {
-            self.textField.font = self.font
-            self.textField.text = self.text
+
+            self.textField.attributedText = self.attributedText
             self.textField.becomeFirstResponder()
         }else{
+            fieldStatusToLabel()
             textField.endEditing(true)
-            let dic = model.getAttributes(1)
-            let att = NSAttributedString(string: self.textField.text!, attributes: dic)
-            self.attributedText = att
         }
-        textField.hidden = !type
-        viewChange()
     }
     
     // 通过label的size,调整view和textFiled的大小
@@ -80,8 +90,8 @@ class WaterMark: UILabel,UITextFieldDelegate {
         textField.frame = rect
     }
     func textFieldShouldReturn(textField: UITextField) -> Bool {
-        textField.endEditing(true)
-        self.text = textField.text
+
+        self.attributedText = textField.attributedText
         self.model.text = textField.text
         changeEidtType(false)
         

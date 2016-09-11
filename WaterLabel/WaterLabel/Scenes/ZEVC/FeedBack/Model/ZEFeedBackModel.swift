@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import LeanCloud
+
 let className_feedBack = "FeedBack"
 let model_contact = "contact"
 let model_description = "description"
@@ -16,13 +16,14 @@ let feedBack_appName = "WaterMark"
 
 extension ZEFeedBackContoller {
     func sendFeedBack(){
-        let feedBack = LCObject(className: className_feedBack)
-        feedBack.set(model_contact, object: titleField.text)
-        feedBack.set(model_description, object: descriptionTextView.text)
-        feedBack.set(model_appName, object: feedBack_appName)
+        let feedBack = AVObject(className: className_feedBack)
+        
+        feedBack.setObject(titleField.text, forKey:model_contact )
+        feedBack.setObject(descriptionTextView.text, forKey:model_description)
+        feedBack.setObject(feedBack_appName, forKey: model_appName)
         ZEHud.sharedInstance.showHud()
         weak var weakSelf = self
-        feedBack.save { (result) in
+        feedBack.saveInBackgroundWithBlock { (success, error) in
             ZEHud.sharedInstance.hideHud()
             ZEHud.sharedInstance.showSuccess("信息已发送")
             weakSelf?.dismissViewControllerAnimated(true, completion: nil)

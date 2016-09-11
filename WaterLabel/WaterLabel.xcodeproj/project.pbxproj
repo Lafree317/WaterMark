@@ -32,8 +32,8 @@
 		525E16821D66AA5E0046B38E /* TZVideoPlayerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 525E16771D66AA5E0046B38E /* TZVideoPlayerController.m */; };
 		525E16831D66AA5E0046B38E /* UIView+Layout.m in Sources */ = {isa = PBXBuildFile; fileRef = 525E16791D66AA5E0046B38E /* UIView+Layout.m */; };
 		527145CE1D65641A00B1B778 /* ColorFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527145CD1D65641A00B1B778 /* ColorFile.swift */; };
-		527145D21D658EBD00B1B778 /* RootKEy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527145D11D658EBD00B1B778 /* RootKEy.swift */; };
-		527C947A1D4DC33A00560B0A /* EditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527C94791D4DC33A00560B0A /* EditView.swift */; };
+		527145D21D658EBD00B1B778 /* RootKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527145D11D658EBD00B1B778 /* RootKey.swift */; };
+		527C947A1D4DC33A00560B0A /* EditViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527C94791D4DC33A00560B0A /* EditViewModel.swift */; };
 		528766861D66D7E100884323 /* KLCPopup.m in Sources */ = {isa = PBXBuildFile; fileRef = 528766851D66D7E100884323 /* KLCPopup.m */; };
 		528766891D66D80600884323 /* ShowString.m in Sources */ = {isa = PBXBuildFile; fileRef = 528766881D66D80600884323 /* ShowString.m */; };
 		5293CCC41D66DDE50027F40F /* ZEHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5293CCC31D66DDE50027F40F /* ZEHomeView.swift */; };
@@ -106,8 +106,8 @@
 		525E16781D66AA5E0046B38E /* UIView+Layout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Layout.h"; sourceTree = "<group>"; };
 		525E16791D66AA5E0046B38E /* UIView+Layout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Layout.m"; sourceTree = "<group>"; };
 		527145CD1D65641A00B1B778 /* ColorFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorFile.swift; sourceTree = "<group>"; };
-		527145D11D658EBD00B1B778 /* RootKEy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootKEy.swift; sourceTree = "<group>"; };
-		527C94791D4DC33A00560B0A /* EditView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditView.swift; sourceTree = "<group>"; };
+		527145D11D658EBD00B1B778 /* RootKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootKey.swift; sourceTree = "<group>"; };
+		527C94791D4DC33A00560B0A /* EditViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditViewModel.swift; sourceTree = "<group>"; };
 		52808B3A1D52F5CB00E5832B /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
 		528766841D66D7E100884323 /* KLCPopup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLCPopup.h; sourceTree = "<group>"; };
 		528766851D66D7E100884323 /* KLCPopup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLCPopup.m; sourceTree = "<group>"; };
@@ -350,7 +350,7 @@
 			children = (
 				52FBD8531D3DDDED00304651 /* Header.h */,
 				52FBD8541D3DDDED00304651 /* MarcoFile.swift */,
-				527145D11D658EBD00B1B778 /* RootKEy.swift */,
+				527145D11D658EBD00B1B778 /* RootKey.swift */,
 				527145CD1D65641A00B1B778 /* ColorFile.swift */,
 			);
 			path = Macro;
@@ -435,7 +435,7 @@
 				522D718E1D4AFEAF00514703 /* ColorSelectView.swift */,
 				522D71901D4B001300514703 /* SelectView.swift */,
 				525670391D4F2245005DA86F /* FontEditSubView.swift */,
-				527C94791D4DC33A00560B0A /* EditView.swift */,
+				527C94791D4DC33A00560B0A /* EditViewModel.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -548,7 +548,7 @@
 				TargetAttributes = {
 					52FBD83C1D3DDDD700304651 = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = WXJL7U66U9;
+						DevelopmentTeam = 2732FJ5DK9;
 					};
 				};
 			};
@@ -647,7 +647,7 @@
 				52FBD8A11D3DDDED00304651 /* WaterMark.swift in Sources */,
 				525E167F1D66AA5E0046B38E /* TZPhotoPickerController.m in Sources */,
 				525938491D6C29A700829E12 /* ZEFeedBackModel.swift in Sources */,
-				527145D21D658EBD00B1B778 /* RootKEy.swift in Sources */,
+				527145D21D658EBD00B1B778 /* RootKey.swift in Sources */,
 				527145CE1D65641A00B1B778 /* ColorFile.swift in Sources */,
 				529AD61B1D49A51C00A99735 /* ZEToolBar.swift in Sources */,
 				52FBD8A01D3DDDED00304651 /* EditImageView.swift in Sources */,
@@ -664,7 +664,7 @@
 				52FBD89D1D3DDDED00304651 /* MarcoFile.swift in Sources */,
 				525E167B1D66AA5E0046B38E /* TZAssetModel.m in Sources */,
 				528766861D66D7E100884323 /* KLCPopup.m in Sources */,
-				527C947A1D4DC33A00560B0A /* EditView.swift in Sources */,
+				527C947A1D4DC33A00560B0A /* EditViewModel.swift in Sources */,
 				525E167C1D66AA5E0046B38E /* TZImageManager.m in Sources */,
 				529AD6231D49E53000A99735 /* IGLDropDownItem.m in Sources */,
 				529AD62A1D49F6CD00A99735 /* UIImage+RoundedCorner.m in Sources */,
@@ -724,7 +724,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -763,7 +763,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -775,18 +775,18 @@
 			baseConfigurationReference = D5F43D4F36F776D0A5871893 /* Pods-WaterLabel.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Gaojie Sun (872222P98D)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Gaojie Sun (872222P98D)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Gaojie Sun (J3A78PW788)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Gaojie Sun (J3A78PW788)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = WaterLabel/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lafree.www.watermark;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "cdf13aee-6fa1-488e-bd4b-6035929fb7d8";
+				PROVISIONING_PROFILE = "d10513e5-ef6f-4a4c-95c4-50ae28276e3a";
 				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/WaterLabel/Macro/Header.h";
 			};
 			name = Debug;
@@ -796,18 +796,18 @@
 			baseConfigurationReference = 72588BBD7120496B59B7F056 /* Pods-WaterLabel.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Gaojie Sun (872222P98D)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Gaojie Sun (872222P98D)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Gaojie Sun (J3A78PW788)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Gaojie Sun (J3A78PW788)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = WaterLabel/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lafree.www.watermark;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "cdf13aee-6fa1-488e-bd4b-6035929fb7d8";
+				PROVISIONING_PROFILE = "d10513e5-ef6f-4a4c-95c4-50ae28276e3a";
 				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/WaterLabel/Macro/Header.h";
 			};
 			name = Release;

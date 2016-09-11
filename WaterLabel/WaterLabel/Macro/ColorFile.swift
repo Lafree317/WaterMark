@@ -22,17 +22,25 @@ let titleColorArr:Array<[String:[String:CGFloat]]> = [
 class ColorFile {
     static func colorToDic(color:UIColor) -> [String:CGFloat] {
         let components = CGColorGetComponents(color.CGColor)
-        let r = components[0]
-        let g = components[1]
-        let b = components[2]
+        let r = components[0]*255
+        let g = components[1]*255
+        let b = components[2]*255
         let a = components[3]
         return ["red":r,"green":g,"blue":b,"alpha":a]
     }
     static func dicToColor(dic:[String:CGFloat]) -> UIColor {
-        let r = dic["red"]!
-        let g = dic["green"]!
-        let b = dic["blue"]!
+        let r = dic["red"]!/255
+        let g = dic["green"]!/255
+        let b = dic["blue"]!/255
         let a = dic["alpha"]!
         return UIColor(red: r, green: g, blue: b, alpha:a)
+    }
+    static func colorIsClear(color:UIColor) -> Bool {
+        let components = CGColorGetComponents(color.CGColor)
+        let a = components[3]
+        if  a == 0 {
+            return true
+        }
+        return false
     }
 }

@@ -13,6 +13,7 @@ class SelectView: IGLDropDownMenu {
     
     var customView:ColorSelectView!
     private var firstY:CGFloat
+    var color:UIColor!
     override init(frame: CGRect) {
         customView = ColorSelectView(frame: frame)
         firstY = frame.origin.y+frame.size.height

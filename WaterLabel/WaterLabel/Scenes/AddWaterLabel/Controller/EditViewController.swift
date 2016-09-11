@@ -64,7 +64,7 @@ class EditViewController: UIViewController {
         labelArr.append(waterMark)
     }
     func setEditView(){
-        editView = EditView(frame:CGRect(x: 0, y: 64, width: view.frame.size.width, height:100))
+        editView = EditView(frame:CGRect(x: 0, y: 64, width: view.frame.size.width, height:130))
         editView.backgroundColor = UIColor.groupTableViewBackgroundColor()
         editView.hidden = true
         view.addSubview(editView)
