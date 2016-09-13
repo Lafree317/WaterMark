@@ -32,8 +32,8 @@
 		525E16821D66AA5E0046B38E /* TZVideoPlayerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 525E16771D66AA5E0046B38E /* TZVideoPlayerController.m */; };
 		525E16831D66AA5E0046B38E /* UIView+Layout.m in Sources */ = {isa = PBXBuildFile; fileRef = 525E16791D66AA5E0046B38E /* UIView+Layout.m */; };
 		527145CE1D65641A00B1B778 /* ColorFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527145CD1D65641A00B1B778 /* ColorFile.swift */; };
-		527145D21D658EBD00B1B778 /* RootKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527145D11D658EBD00B1B778 /* RootKey.swift */; };
 		527C947A1D4DC33A00560B0A /* EditViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527C94791D4DC33A00560B0A /* EditViewModel.swift */; };
+		527D50061D87946300D07A2A /* RootKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527D50051D87946300D07A2A /* RootKey.swift */; };
 		528766861D66D7E100884323 /* KLCPopup.m in Sources */ = {isa = PBXBuildFile; fileRef = 528766851D66D7E100884323 /* KLCPopup.m */; };
 		528766891D66D80600884323 /* ShowString.m in Sources */ = {isa = PBXBuildFile; fileRef = 528766881D66D80600884323 /* ShowString.m */; };
 		5293CCC41D66DDE50027F40F /* ZEHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5293CCC31D66DDE50027F40F /* ZEHomeView.swift */; };
@@ -106,8 +106,8 @@
 		525E16781D66AA5E0046B38E /* UIView+Layout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Layout.h"; sourceTree = "<group>"; };
 		525E16791D66AA5E0046B38E /* UIView+Layout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Layout.m"; sourceTree = "<group>"; };
 		527145CD1D65641A00B1B778 /* ColorFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorFile.swift; sourceTree = "<group>"; };
-		527145D11D658EBD00B1B778 /* RootKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootKey.swift; sourceTree = "<group>"; };
 		527C94791D4DC33A00560B0A /* EditViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditViewModel.swift; sourceTree = "<group>"; };
+		527D50051D87946300D07A2A /* RootKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootKey.swift; sourceTree = "<group>"; };
 		52808B3A1D52F5CB00E5832B /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
 		528766841D66D7E100884323 /* KLCPopup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLCPopup.h; sourceTree = "<group>"; };
 		528766851D66D7E100884323 /* KLCPopup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLCPopup.m; sourceTree = "<group>"; };
@@ -350,7 +350,7 @@
 			children = (
 				52FBD8531D3DDDED00304651 /* Header.h */,
 				52FBD8541D3DDDED00304651 /* MarcoFile.swift */,
-				527145D11D658EBD00B1B778 /* RootKey.swift */,
+				527D50051D87946300D07A2A /* RootKey.swift */,
 				527145CD1D65641A00B1B778 /* ColorFile.swift */,
 			);
 			path = Macro;
@@ -647,7 +647,6 @@
 				52FBD8A11D3DDDED00304651 /* WaterMark.swift in Sources */,
 				525E167F1D66AA5E0046B38E /* TZPhotoPickerController.m in Sources */,
 				525938491D6C29A700829E12 /* ZEFeedBackModel.swift in Sources */,
-				527145D21D658EBD00B1B778 /* RootKey.swift in Sources */,
 				527145CE1D65641A00B1B778 /* ColorFile.swift in Sources */,
 				529AD61B1D49A51C00A99735 /* ZEToolBar.swift in Sources */,
 				52FBD8A01D3DDDED00304651 /* EditImageView.swift in Sources */,
@@ -659,6 +658,7 @@
 				52FBD8A21D3DDDED00304651 /* EditLabelViewController.swift in Sources */,
 				525938481D6C29A700829E12 /* ZEFeedBackContoller.swift in Sources */,
 				525E16801D66AA5E0046B38E /* TZPhotoPreviewCell.m in Sources */,
+				527D50061D87946300D07A2A /* RootKey.swift in Sources */,
 				52FBD89F1D3DDDED00304651 /* EditModel.swift in Sources */,
 				529AD62B1D49F6CD00A99735 /* UIView+RoundedCorner.m in Sources */,
 				52FBD89D1D3DDDED00304651 /* MarcoFile.swift in Sources */,
