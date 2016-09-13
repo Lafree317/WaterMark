@@ -1,4 +1,6 @@
 # WaterLabel
+AppStore地址:https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=1148289486&mt=8
+
 ### 更新日志
 - 1.1:
 - [X] 支持iOS8.0
