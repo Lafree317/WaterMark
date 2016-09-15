@@ -52,17 +52,19 @@ class WaterMark: UILabel,UITextFieldDelegate {
         self.addSubview(textField)
         viewChange()
     }
+    // model一改变就会调用
     func setlabelModel(labelModel:LabelModel){
         let dic = labelModel.getAttributes(1)
         let att = NSMutableAttributedString(string: labelModel.text, attributes: dic)
         self.attributedText = att
-        self.textField.attributedText = self.attributedText
+
         viewChange()
     }
     func textchange(){
         fieldStatusToLabel()
         
     }
+    // textFile一改变就会调用
     func fieldStatusToLabel(){
         let dic = model.getAttributes(1)
         let att = NSAttributedString(string: self.textField.text!, attributes: dic)
