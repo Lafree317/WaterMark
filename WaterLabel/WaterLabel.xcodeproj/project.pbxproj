@@ -32,6 +32,7 @@
 		525E16821D66AA5E0046B38E /* TZVideoPlayerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 525E16771D66AA5E0046B38E /* TZVideoPlayerController.m */; };
 		525E16831D66AA5E0046B38E /* UIView+Layout.m in Sources */ = {isa = PBXBuildFile; fileRef = 525E16791D66AA5E0046B38E /* UIView+Layout.m */; };
 		527145CE1D65641A00B1B778 /* ColorFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527145CD1D65641A00B1B778 /* ColorFile.swift */; };
+		5275CE261D8D0BCE0029C101 /* ZERegistController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5275CE251D8D0BCE0029C101 /* ZERegistController.swift */; };
 		527C947A1D4DC33A00560B0A /* EditViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527C94791D4DC33A00560B0A /* EditViewModel.swift */; };
 		527D50061D87946300D07A2A /* RootKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527D50051D87946300D07A2A /* RootKey.swift */; };
 		528766861D66D7E100884323 /* KLCPopup.m in Sources */ = {isa = PBXBuildFile; fileRef = 528766851D66D7E100884323 /* KLCPopup.m */; };
@@ -106,6 +107,7 @@
 		525E16781D66AA5E0046B38E /* UIView+Layout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Layout.h"; sourceTree = "<group>"; };
 		525E16791D66AA5E0046B38E /* UIView+Layout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Layout.m"; sourceTree = "<group>"; };
 		527145CD1D65641A00B1B778 /* ColorFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorFile.swift; sourceTree = "<group>"; };
+		5275CE251D8D0BCE0029C101 /* ZERegistController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZERegistController.swift; sourceTree = "<group>"; };
 		527C94791D4DC33A00560B0A /* EditViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditViewModel.swift; sourceTree = "<group>"; };
 		527D50051D87946300D07A2A /* RootKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootKey.swift; sourceTree = "<group>"; };
 		52808B3A1D52F5CB00E5832B /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
@@ -223,6 +225,7 @@
 			isa = PBXGroup;
 			children = (
 				525938441D6C29A700829E12 /* ZELoginViewController.swift */,
+				5275CE251D8D0BCE0029C101 /* ZERegistController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -548,7 +551,6 @@
 				TargetAttributes = {
 					52FBD83C1D3DDDD700304651 = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = 2732FJ5DK9;
 					};
 				};
 			};
@@ -639,6 +641,7 @@
 			files = (
 				522D873D1D6C33210034BCE1 /* ZEHead.swift in Sources */,
 				528766891D66D80600884323 /* ShowString.m in Sources */,
+				5275CE261D8D0BCE0029C101 /* ZERegistController.swift in Sources */,
 				52FBD8A51D3DDDED00304651 /* HomeViewController.swift in Sources */,
 				525E16831D66AA5E0046B38E /* UIView+Layout.m in Sources */,
 				522D873B1D6C31E40034BCE1 /* ZELoginModel.swift in Sources */,
@@ -775,8 +778,8 @@
 			baseConfigurationReference = D5F43D4F36F776D0A5871893 /* Pods-WaterLabel.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Gaojie Sun (J3A78PW788)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Gaojie Sun (J3A78PW788)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Gaojie Sun (872222P98D)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Gaojie Sun (872222P98D)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -786,7 +789,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lafree.www.watermark;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "d10513e5-ef6f-4a4c-95c4-50ae28276e3a";
+				PROVISIONING_PROFILE = "cdf13aee-6fa1-488e-bd4b-6035929fb7d8";
 				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/WaterLabel/Macro/Header.h";
 			};
 			name = Debug;
@@ -796,8 +799,8 @@
 			baseConfigurationReference = 72588BBD7120496B59B7F056 /* Pods-WaterLabel.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Gaojie Sun (J3A78PW788)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Gaojie Sun (J3A78PW788)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Gaojie Sun (872222P98D)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Gaojie Sun (872222P98D)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -807,7 +810,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lafree.www.watermark;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "d10513e5-ef6f-4a4c-95c4-50ae28276e3a";
+				PROVISIONING_PROFILE = "cdf13aee-6fa1-488e-bd4b-6035929fb7d8";
 				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/WaterLabel/Macro/Header.h";
 			};
 			name = Release;

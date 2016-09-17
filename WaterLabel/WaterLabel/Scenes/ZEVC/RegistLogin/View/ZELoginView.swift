@@ -15,6 +15,18 @@ let loginMargin = 15
 extension ZELoginViewController{
     
     func setUI(){
+        let logoIamgeView = UIImageView()
+        logoIamgeView.image = UIImage(named: "logo")
+        logoIamgeView.backgroundColor = UIColor.groupTableViewBackgroundColor()
+        logoIamgeView.layer.masksToBounds = true
+        logoIamgeView.layer.cornerRadius = 10
+        view.addSubview(logoIamgeView)
+        logoIamgeView.snp_makeConstraints { (make) in
+            make.top.equalTo(64+20)
+            make.centerX.equalTo(view.snp_centerX)
+            make.size.equalTo(CGSize(width: 64, height: 64))
+        }
+        
         let ulabel = ZELabel()
         ulabel.text = "用户名:"
         ulabel.textAlignment = .Right
@@ -22,8 +34,8 @@ extension ZELoginViewController{
         ulabel.snp_makeConstraints { (make) in
             make.left.equalTo(10)
             make.width.equalTo(60)
-            make.top.equalTo(74)
-            make.height.equalTo(25)
+            make.top.equalTo(logoIamgeView.snp_bottom).offset(30)
+            make.height.equalTo(30)
         }
         ulabel.sizeToFit()
         userNameF = ZETextField()
@@ -60,11 +72,13 @@ extension ZELoginViewController{
         loginButton.setTitle("登陆", forState: .Normal)
         loginButton.backgroundColor = ZEButtomDefultColor
         loginButton.setTitleColor(UIColor.whiteColor(), forState: .Normal)
+        loginButton.layer.masksToBounds = true
+        loginButton.layer.cornerRadius = 5
         view.addSubview(loginButton)
         loginButton.snp_makeConstraints { (make) in
             make.left.equalTo(ulabel.snp_left)
             make.right.equalTo(passWordF.snp_right)
-            make.top.equalTo(passWordF.snp_bottom).offset(20)
+            make.top.equalTo(passWordF.snp_bottom).offset(10)
         }
         
         

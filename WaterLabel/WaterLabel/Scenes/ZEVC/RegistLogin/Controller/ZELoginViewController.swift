@@ -10,6 +10,7 @@ import UIKit
 import RxSwift
 class ZELoginViewController: UIViewController {
     let disposeBag = DisposeBag()
+    
     var userNameF:ZETextField!
     var passWordF:ZETextField!
     var loginButton:UIButton!
