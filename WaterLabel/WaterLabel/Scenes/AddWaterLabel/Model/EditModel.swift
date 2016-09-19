@@ -69,7 +69,7 @@ extension EditViewController {
             }
             let imageA = UIGraphicsGetImageFromCurrentImageContext()// 获取图片
             UIGraphicsEndImageContext()// 结束绘制
-            UIImageWriteToSavedPhotosAlbum(imageA, self, nil, nil)// 保存
+            UIImageWriteToSavedPhotosAlbum(imageA!, self, nil, nil)// 保存
             dispatch_async(dispatch_get_main_queue(), {
                 ZEHud.sharedInstance.hideHud()
                 ShowString.sharedManager().showStringView("保存成功")
