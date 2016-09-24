@@ -37,7 +37,7 @@ extension EditViewController {
      
      - returns: 返回原图
      */
-    func getImage(assIndex:Int,complete:((image:UIImage) -> ())){
+    func getImage(assIndex:Int,complete:((_ image:UIImage) -> ())){
         print(index)
         if index < 0 || index >= assets.count {
             return

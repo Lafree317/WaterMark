@@ -16,7 +16,7 @@ class ZEToolBar: UIToolbar {
         }
     }
     private var itemArr:[UIBarButtonItem] = [] // 存储item用于以后操作
-    var actionCallBack:((imageName:String) -> ())? // 回调imageName
+    var actionCallBack:((_ imageName:String) -> ())? // 回调imageName
     override init(frame: CGRect) {
         super.init(frame: frame)
         setUI()

@@ -8,7 +8,7 @@
 
 #ifndef Header_h
 #define Header_h
-#import "AVOSCloud.h"
+//#import "AVOSCloud.h"
 
 
 
@@ -17,9 +17,9 @@
 #import "UIView+RoundedCorner.h"
 #import "TZImageManager.h"
 #import "TZImagePickerController.h"
-
+#import "Snapkit.h"
 #import "TZImageManager.h"
 #import "ShowString.h"
-#import <Bugly/Bugly.h>
+//#import <Bugly/Bugly.h>
 
 #endif /* Header_h */
