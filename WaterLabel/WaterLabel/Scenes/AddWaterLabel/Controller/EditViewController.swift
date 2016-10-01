@@ -8,10 +8,10 @@
 
 import UIKit
 extension EditViewController {
-    override func viewWillAppear(animated: Bool) {
+    override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
     }
-    override func viewWillDisappear(animated: Bool) {
+    override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         editView.removeObserver()
     }
@@ -42,7 +42,7 @@ class EditViewController: UIViewController {
     func setImageView(){
         imageView = EditImageView(frame: CGRect(x: 0, y: 0, width: 0, height: 0))
         changeImage(0)
-        view.insertSubview(imageView, atIndex: 0)
+        view.insertSubview(imageView, at: 0)
     }
     func addWaterMark(){
         weak var weakSelf = self
@@ -57,16 +57,17 @@ class EditViewController: UIViewController {
                 label.textField.text = label.text
                 label.changeEidtType(false)
             }
-            wself.editView.hidden = false
+            wself.editView.isHidden = false
             wself.editView.waterMark = waterMark
+            wself.editView.waterMark.changeEidtType(true)
         }
-        view.insertSubview(waterMark, atIndex: 1)
+        view.insertSubview(waterMark, at: 1)
         labelArr.append(waterMark)
     }
     func setEditView(){
         editView = EditView(frame:CGRect(x: 0, y: 64, width: view.frame.size.width, height:130))
-        editView.backgroundColor = UIColor.groupTableViewBackgroundColor()
-        editView.hidden = true
+        editView.backgroundColor = UIColor.groupTableViewBackground
+        editView.isHidden = true
         view.addSubview(editView)
     }
     func setToolBar(){
@@ -105,12 +106,12 @@ class EditViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func deleteAction(sender: UIBarButtonItem) {
+    @IBAction func deleteAction(_ sender: UIBarButtonItem) {
         
     }
 
     
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
     }

@@ -9,15 +9,12 @@
 import UIKit
 
 extension DemoViewController{
-    override func viewWillAppear(animated: Bool) {
+    override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
     }
-    override func viewDidAppear(animated: Bool) {
+    override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        
-        
-
     }
 }
 
@@ -29,14 +26,14 @@ class DemoViewController: UIViewController {
         
         
         let editView = EditView(frame:CGRect(x: 0, y: 64, width: view.frame.size.width, height:130))
-        editView.backgroundColor = UIColor.groupTableViewBackgroundColor()
+        editView.backgroundColor = UIColor.groupTableViewBackground
         view.addSubview(editView)
         let waterMark = WaterMark(frame: CGRect(x: 0, y: 0, width: 200, height: 30))
         waterMark.model = LabelModel()
         waterMark.center = view.center
         
         waterMark.longPressCallBack = {
-            editView.hidden = false
+            editView.isHidden = false
             
         }
         editView.waterMark = waterMark
@@ -53,7 +50,7 @@ class DemoViewController: UIViewController {
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
     }

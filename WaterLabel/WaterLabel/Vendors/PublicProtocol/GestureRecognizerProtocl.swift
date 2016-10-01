@@ -22,15 +22,15 @@ protocol ViewLongPress {
 extension ViewLongPress where Self:UIView{
     
     func addLongPress(){
-        self.userInteractionEnabled = true
-        let longPress = UILongPressGestureRecognizer(target: self, action:Selector("longPress:"))
+        self.isUserInteractionEnabled = true
+        let longPress = UILongPressGestureRecognizer(target: self, action:Selector(("longPress:")))
         longPress.minimumPressDuration = 1
         longPress.allowableMovement = 100
         self.addGestureRecognizer(longPress)
     }
     
-    func longPress(longPress:UILongPressGestureRecognizer){
-        if longPress.state == .Began {
+    func longPress(_ longPress:UILongPressGestureRecognizer){
+        if longPress.state == .began {
             print("长按开始")
             
             if let callBack = longPressCallBack {

@@ -12,7 +12,7 @@ class SelectView: IGLDropDownMenu {
 
     
     var customView:ColorSelectView!
-    private var firstY:CGFloat
+    fileprivate var firstY:CGFloat
     var color:UIColor!
     override init(frame: CGRect) {
         customView = ColorSelectView(frame: frame)
@@ -23,25 +23,25 @@ class SelectView: IGLDropDownMenu {
             let view = ColorSelectView(frame: frame)
             view.color = ColorFile.dicToColor(dic.values.first!)
             let dropItem = IGLDropDownItem(customView: view)
-            dropItemArr.append(dropItem)
+            dropItemArr.append(dropItem!)
         }
         self.dropDownItems = dropItemArr
         self.frame = frame
-        type = .Normal
+        type = .normal
         gutterY = 1
         self.reloadView()
     }
-    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
-        let point = touches.first?.locationInView(self)
-        print(touches.first?.locationInView(self))
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        let point = touches.first?.location(in: self)
+        print(touches.first?.location(in: self))
         for subview in self.subviews {
-            let p = subview.convertPoint(point!, fromView: self)
-            if CGRectContainsPoint(subview.bounds, p) {
+            let p = subview.convert(point!, from: self)
+            if subview.bounds.contains(p) {
                let view =  subview as! IGLDropDownItem
-                view.sendActionsForControlEvents(.TouchUpInside)
+                view.sendActions(for: .touchUpInside)
             }
         }
-        super.touchesBegan(touches, withEvent: event)
+        super.touchesBegan(touches, with: event)
     }
 
     required init?(coder aDecoder: NSCoder) {

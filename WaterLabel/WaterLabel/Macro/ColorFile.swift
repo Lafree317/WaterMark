@@ -20,24 +20,24 @@ let titleColorArr:Array<[String:[String:CGFloat]]> = [
     ["紫色":["red":255,"green":0,"blue":255,"alpha":1]],
 ]
 class ColorFile {
-    static func colorToDic(color:UIColor) -> [String:CGFloat] {
-        let components = CGColorGetComponents(color.CGColor)
-        let r = components[0]*255
-        let g = components[1]*255
-        let b = components[2]*255
-        let a = components[3]
-        return ["red":r,"green":g,"blue":b,"alpha":a]
+    static func colorToDic(_ color:UIColor) -> [String:CGFloat] {
+        let components = color.cgColor.components
+        let r = (components?[0])!*255
+        let g = (components?[1])!*255
+        let b = (components?[2])!*255
+        let a = components?[3]
+        return ["red":r,"green":g,"blue":b,"alpha":a!]
     }
-    static func dicToColor(dic:[String:CGFloat]) -> UIColor {
+    static func dicToColor(_ dic:[String:CGFloat]) -> UIColor {
         let r = dic["red"]!/255
         let g = dic["green"]!/255
         let b = dic["blue"]!/255
         let a = dic["alpha"]!
         return UIColor(red: r, green: g, blue: b, alpha:a)
     }
-    static func colorIsClear(color:UIColor) -> Bool {
-        let components = CGColorGetComponents(color.CGColor)
-        let a = components[3]
+    static func colorIsClear(_ color:UIColor) -> Bool {
+        let components = color.cgColor.components
+        let a = components?[3]
         if  a == 0 {
             return true
         }

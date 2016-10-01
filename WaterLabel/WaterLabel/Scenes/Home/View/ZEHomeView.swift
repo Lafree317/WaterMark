@@ -11,7 +11,7 @@ extension UIButton {
     func whiteBorder(){
         self.layer.masksToBounds = true
         self.layer.cornerRadius = 2
-        self.layer.borderColor = UIColor.whiteColor().CGColor
+        self.layer.borderColor = UIColor.white.cgColor
         self.layer.borderWidth = 1
     }
 }

@@ -8,9 +8,8 @@
 
 #ifndef Header_h
 #define Header_h
-//#import "AVOSCloud.h"
 
-
+#import "AVOSCloud.h"
 
 //#import "MLSelectPhotoPickerViewController"
 #import "IGLDropDownMenu.h"
@@ -20,6 +19,9 @@
 #import "Snapkit.h"
 #import "TZImageManager.h"
 #import "ShowString.h"
+#import "MBProgressHUD.h"
+#import "NJKWebViewProgress.h"
+#import "NJKWebViewProgressView.h"
 //#import <Bugly/Bugly.h>
 
 #endif /* Header_h */

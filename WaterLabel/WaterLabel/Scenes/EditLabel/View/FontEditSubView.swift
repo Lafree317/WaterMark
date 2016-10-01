@@ -21,15 +21,15 @@ class FontEditButton: UIButton {
         select = false
         selected(select)
     }
-    func selected(bool:Bool){
+    func selected(_ bool:Bool){
         var titleColor:UIColor
         var backgroundColor:UIColor
         if bool == true {
-            titleColor  = .whiteColor()
+            titleColor  = .white
             backgroundColor = selectColor
         }else{
             titleColor = selectColor
-            backgroundColor = .whiteColor()
+            backgroundColor = .white
         }
         self.tintColor = titleColor
         self.backgroundColor = backgroundColor
@@ -41,8 +41,8 @@ class FontEditButton: UIButton {
 class FontEditLabel: UILabel{
     override init(frame: CGRect) {
         super.init(frame: frame)
-        font = UIFont.systemFontOfSize(15)
-        textColor = .grayColor()
+        font = UIFont.systemFont(ofSize: 15)
+        textColor = .gray
     }
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")

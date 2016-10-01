@@ -7,43 +7,43 @@
 //
 
 import UIKit
-import MBProgressHUD
+
 // TODO : 时间
 class ZEHud: NSObject {
     static let sharedInstance = ZEHud()
-    private override init() {}
+    fileprivate override init() {}
     var hud:MBProgressHUD?
+    var view:UIView!
     
-    let window = UIApplication.sharedApplication().delegate?.window!
     func showHud(){
-        hud = MBProgressHUD.showHUDAddedTo(window!, animated: true)
+        hud = MBProgressHUD.showAdded(to: view, animated: true)
     }
-    func showHudWithView(view:UIView){
-        hud = MBProgressHUD.showHUDAddedTo(view, animated: true)
+    func showHudWithView(_ view:UIView){
+        hud = MBProgressHUD.showAdded(to: view, animated: true)
     }
     func hideHud(){
         
-        hud?.hideAnimated(true, afterDelay: 0)
+        hud?.hide(animated: true, afterDelay: 0)
     }
-    func showSuccess(text:String){
+    func showSuccess(_ text:String){
         createdHud(text)
     }
-    func showError(text:String){
+    func showError(_ text:String){
         createdHud(text)
     }
-    func createdHud(text:String){
-        hud?.hideAnimated(true)
-        hud = MBProgressHUD.showHUDAddedTo(window!, animated: true)
+    func createdHud(_ text:String){
+        hud?.hide(animated: true)
+        hud = MBProgressHUD.showAdded(to: view, animated: true)
         hud?.label.text = text
-        hud?.mode = MBProgressHUDMode.CustomView
+        hud?.mode = MBProgressHUDMode.customView
         hud?.removeFromSuperViewOnHide = true
-        hud?.hideAnimated(true, afterDelay: 0.75)
+        hud?.hide(animated: true, afterDelay: 0.75)
     }
-    func showSuccessWithImage(text:String){
+    func showSuccessWithImage(_ text:String){
         createdHud(text)
         hud?.customView = UIImageView(image: UIImage.init(named: "success"))
     }
-    func showErrorWithImage(text:String){
+    func showErrorWithImage(_ text:String){
         createdHud(text)
         hud?.customView = UIImageView(image: UIImage.init(named: "error"))
     }

@@ -14,9 +14,9 @@ class ColorSelectView: UIView {
             self.color = newValue
             self.backgroundColor = self.color
             if ColorFile.colorIsClear(self.color!) {
-                label.hidden = false
+                label.isHidden = false
             }else{
-                label.hidden = true
+                label.isHidden = true
             }
         }
     }
@@ -26,19 +26,19 @@ class ColorSelectView: UIView {
         self.layer.masksToBounds = true
         self.layer.cornerRadius = 5
         self.layer.borderWidth = 1
-        self.layer.borderColor = UIColor.groupTableViewBackgroundColor().CGColor
+        self.layer.borderColor = UIColor.groupTableViewBackground.cgColor
         label = UILabel(frame: bounds)
         var attDic = [String : AnyObject]()
-        attDic[NSForegroundColorAttributeName] = UIColor.whiteColor()
-        attDic[NSFontAttributeName] = UIFont.systemFontOfSize(12)
-        attDic[NSStrokeWidthAttributeName] = -3
-        attDic[NSStrokeColorAttributeName] = UIColor.blackColor()
+        attDic[NSForegroundColorAttributeName] = UIColor.white
+        attDic[NSFontAttributeName] = UIFont.systemFont(ofSize: 12)
+        attDic[NSStrokeWidthAttributeName] = -3 as AnyObject?
+        attDic[NSStrokeColorAttributeName] = UIColor.black
         let att = NSMutableAttributedString(string: "透明", attributes: attDic)
         label.attributedText = att
-        label.hidden = true
+        label.isHidden = true
         self.addSubview(label)
     }
-    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         print("colorTouch")
     }
     required init?(coder aDecoder: NSCoder) {

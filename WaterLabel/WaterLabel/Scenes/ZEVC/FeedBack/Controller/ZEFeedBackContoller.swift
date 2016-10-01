@@ -12,13 +12,13 @@ import UIKit
 
 
 extension ZEFeedBackContoller{
-    override func viewWillAppear(animated: Bool) {
+    override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         AVOSCloud.setApplicationId(app_feedback_id, clientKey: app_feedback_key)
         
     }
     
-    override func viewWillDisappear(animated: Bool) {
+    override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         guard let appRid = app_root_id,let appRKey = app_root_key else{
             return
@@ -26,7 +26,7 @@ extension ZEFeedBackContoller{
         AVOSCloud.setApplicationId(appRid, clientKey: appRKey)
     }
     
-    override func viewDidAppear(animated: Bool) {
+    override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         titleField.becomeFirstResponder()
     }
@@ -50,11 +50,11 @@ class ZEFeedBackContoller: UIViewController,UITextFieldDelegate,UIScrollViewDele
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    func textFieldShouldReturn(textField: UITextField) -> Bool {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         descriptionTextView.becomeFirstResponder()
         return true
     }
-    func scrollViewDidScroll(scrollView: UIScrollView) {
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
         self.view.endEditing(true)
     }
 

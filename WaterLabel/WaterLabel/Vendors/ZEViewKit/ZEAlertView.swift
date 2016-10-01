@@ -7,24 +7,24 @@
 //
 
 import UIKit
-typealias alertCallBack = (confirm:Bool)->()
+typealias alertCallBack = (_ confirm:Bool)->()
 class ZEAlert: NSObject {
     var alertVC:UIAlertController!
     init(title:String,message:String?,confirm:String?,cancle:String?,style:UIAlertControllerStyle,callBack:alertCallBack?){
         super.init()
         alertVC = UIAlertController(title: title, message: message, preferredStyle:style)
         if let confirm = confirm {
-            let confirmAction = UIAlertAction(title: confirm, style:.Default, handler: { (action) in
+            let confirmAction = UIAlertAction(title: confirm, style:.default, handler: { (action) in
                 if let block = callBack{
-                    block(confirm: true)
+                    block(true)
                 }
             })
             alertVC.addAction(confirmAction)
         }
         if let cancle = cancle {
-            let cancleAction = UIAlertAction(title: cancle, style:.Default, handler: { (action) in
+            let cancleAction = UIAlertAction(title: cancle, style:.default, handler: { (action) in
                 if let block = callBack{
-                    block(confirm: false)
+                    block(false)
                 }
             })
             alertVC.addAction(cancleAction)

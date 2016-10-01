@@ -9,10 +9,13 @@
 import UIKit
 
 
-let screenWidth = UIScreen.mainScreen().bounds.width
-let screenHeight = UIScreen.mainScreen().bounds.height
+let screenWidth = UIScreen.main.bounds.width
+let screenHeight = UIScreen.main.bounds.height
 
 
 // segueID
 let editLabelVCId = "editLabelVC"// 编辑模板页面
 let editVCSeugeId = "EditVCSeugeId"// 添加水印页面
+let captureSegueId = "webCapture" // 网页截图界面
+
+let begainVC = "begainVC"

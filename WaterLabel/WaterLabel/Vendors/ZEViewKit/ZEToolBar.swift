@@ -15,7 +15,7 @@ class ZEToolBar: UIToolbar {
             setBarItems()
         }
     }
-    private var itemArr:[UIBarButtonItem] = [] // 存储item用于以后操作
+    fileprivate var itemArr:[UIBarButtonItem] = [] // 存储item用于以后操作
     var actionCallBack:((_ imageName:String) -> ())? // 回调imageName
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -23,13 +23,13 @@ class ZEToolBar: UIToolbar {
         setBarItems()
     }
     func setUI(){
-        tintColor = UIColor.lightGrayColor()
+        tintColor = UIColor.lightGray
     }
     func setBarItems(){
         itemArr = []
-        let spaceItem = UIBarButtonItem(barButtonSystemItem: .FlexibleSpace, target: nil, action: nil)
+        let spaceItem = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
         for str in imageNameArr {
-            let item = UIBarButtonItem(image: UIImage(named: str), style: .Done, target: self, action: #selector(itemAction(_:)))
+            let item = UIBarButtonItem(image: UIImage(named: str), style: .done, target: self, action: #selector(itemAction(_:)))
             item.title = str
             if itemArr.count != 0 {
                 itemArr.append(spaceItem)
@@ -38,9 +38,9 @@ class ZEToolBar: UIToolbar {
         }
         self.setItems(itemArr, animated: true)
     }
-    func itemAction(item:UIBarButtonItem){
+    func itemAction(_ item:UIBarButtonItem){
         if let block = actionCallBack {
-            block(imageName: item.title!)
+            block(item.title!)
         }
     }
     required init?(coder aDecoder: NSCoder) {

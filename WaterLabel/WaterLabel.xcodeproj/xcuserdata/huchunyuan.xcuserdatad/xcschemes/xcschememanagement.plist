@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Capture.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
 		<key>WaterLabel.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -12,6 +17,11 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>527578C71D99342A00C87172</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>52FBD83C1D3DDDD700304651</key>
 		<dict>
 			<key>primary</key>

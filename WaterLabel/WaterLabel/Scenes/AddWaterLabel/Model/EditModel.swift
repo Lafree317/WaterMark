@@ -7,15 +7,15 @@
 //
 
 import UIKit
-import MBProgressHUD
+
 extension EditViewController {
     /**
      通过下标改变当前展示的图片
      
      - parameter assIndex: 图片下标
      */
-    func changeImage(assIndex:Int){
-   
+    func changeImage(_ assIndex:Int){
+        
         index += assIndex
         if index < 0 {
             index = assets.count-1
@@ -37,13 +37,13 @@ extension EditViewController {
      
      - returns: 返回原图
      */
-    func getImage(assIndex:Int,complete:((_ image:UIImage) -> ())){
+    func getImage(_ assIndex:Int,complete:@escaping ((_ image:UIImage) -> ())){
         print(index)
         if index < 0 || index >= assets.count {
             return
         }
-        TZImageManager().getOriginalPhotoWithAsset(assets[assIndex]) { (image, info) in
-            complete(image: image)
+        TZImageManager().getOriginalPhoto(withAsset: assets[assIndex]) { (image, info) in
+            complete(image!)
         }
     }
     /**
@@ -57,42 +57,44 @@ extension EditViewController {
         guard let wself = weakSelf else{
             return
         }
+        ZEHud.sharedInstance.view = self.view
         ZEHud.sharedInstance.showHud()
-        dispatch_async(dispatch_queue_create("addLabel",nil)) {
+        
+        DispatchQueue(label: "addLabel",attributes: []).async {
             UIGraphicsBeginImageContext(image.size)// 开始绘制
-            image.drawInRect(CGRect(origin: CGPoint.zero, size: image.size))
+            image.draw(in: CGRect(origin: CGPoint.zero, size: image.size))
             for label in wself.labelArr { // 添加多个水印
-                let rect = wself.imageView.convertRect(label.frame, fromView: nil)
+                let rect = wself.imageView.convert(label.frame, from: nil)
                 let reScale = 1/wself.imageView.scale
-                let labelRect = CGRectMake((rect.origin.x)*reScale, (rect.origin.y*reScale), rect.size.width*reScale, rect.height*reScale)
-                label.model.text.drawInRect(labelRect, withAttributes:label.model.getAttributes(1/wself.imageView.scale))
+                let labelRect = CGRect(x: (rect.origin.x)*reScale, y: (rect.origin.y*reScale), width: rect.size.width*reScale, height: rect.height*reScale)
+                label.model.text.draw(in: labelRect, withAttributes:label.model.getAttributes(1/wself.imageView.scale))
             }
             let imageA = UIGraphicsGetImageFromCurrentImageContext()// 获取图片
             UIGraphicsEndImageContext()// 结束绘制
             UIImageWriteToSavedPhotosAlbum(imageA!, self, nil, nil)// 保存
-            dispatch_async(dispatch_get_main_queue(), {
+            DispatchQueue.main.async(execute: {
                 ZEHud.sharedInstance.hideHud()
                 ShowString.sharedManager().showStringView("保存成功")
-                wself.assets.removeAtIndex(wself.index)
+                wself.assets.remove(at: wself.index)
                 wself.changeImage(wself.index)
                 if weakSelf!.assets.count == 0 {
-                    weakSelf?.performSelector(#selector(weakSelf?.nodataPop), withObject: nil, afterDelay: 0.3)
+                    weakSelf?.perform(#selector(weakSelf?.nodataPop), with: nil, afterDelay: 0.3)
                     }
             })
         }
     }
     func nodataPop(){
         ZEHud.sharedInstance.showSuccess("所有图片编辑完成")
-        self.navigationController?.popViewControllerAnimated(true)
+        self.navigationController!.popViewController(animated: true)
     }
     func refreshUI(){
         weak var weakSelf = self
         guard let wself = weakSelf else{
             return
         }
-        UIView.animateWithDuration(0.3) {
+        UIView.animate(withDuration: 0.3, animations: {
             wself.changeImage(0)
-        }
+        }) 
         for label in labelArr {
             label.removeFromSuperview()
         }

@@ -18,15 +18,15 @@ extension ZEFeedBackContoller {
     func sendFeedBack(){
         let feedBack = AVObject(className: className_feedBack)
         
-        feedBack.setObject(titleField.text, forKey:model_contact )
-        feedBack.setObject(descriptionTextView.text, forKey:model_description)
-        feedBack.setObject(feedBack_appName, forKey: model_appName)
+        feedBack?.setObject(titleField.text, forKey:model_contact )
+        feedBack?.setObject(descriptionTextView.text, forKey:model_description)
+        feedBack?.setObject(feedBack_appName, forKey: model_appName)
         ZEHud.sharedInstance.showHud()
         weak var weakSelf = self
-        feedBack.saveInBackgroundWithBlock { (success, error) in
+        feedBack?.saveInBackground { (success, error) in
             ZEHud.sharedInstance.hideHud()
             ZEHud.sharedInstance.showSuccess("信息已发送")
-            weakSelf?.dismissViewControllerAnimated(true, completion: nil)
+            weakSelf?.dismiss(animated: true, completion: nil)
         }
     }
 }

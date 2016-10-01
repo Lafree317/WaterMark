@@ -20,68 +20,68 @@ struct LabelModel {
     var text:String!{
         willSet{
             self.text = newValue
-            setUD(self.text, key:textUDK)
+            setUD(self.text as AnyObject?, key:textUDK)
         }
     }
     var fontSize:CGFloat = 17{
         willSet{
             self.fontSize = newValue
-            setUD(self.fontSize, key:fontSizeUDK)
+            setUD(self.fontSize as AnyObject?, key:fontSizeUDK)
         }
     }
     var borderSize:CGFloat = 0 {
         willSet{
             self.borderSize = newValue
-            setUD(self.borderSize, key: borderSizeUDK)
+            setUD(self.borderSize as AnyObject?, key: borderSizeUDK)
         }
     }
-    var textColor:UIColor = UIColor.blackColor(){
+    var textColor:UIColor = UIColor.black{
         willSet{
             self.textColor = newValue
             let dic = ColorFile.colorToDic(self.textColor)
             print("存入Dic:" + "\(dic)")
-            setUD(dic, key:textColorUDK)
+            setUD(dic as AnyObject?, key:textColorUDK)
         }
     }
-    var borderColor:UIColor = UIColor.clearColor(){
+    var borderColor:UIColor = UIColor.clear{
         willSet{
             self.borderColor = newValue
             let dic = ColorFile.colorToDic(self.borderColor)
-            setUD(dic, key: borderColorUDK)
+            setUD(dic as AnyObject?, key: borderColorUDK)
         }
     }
-    var backColor:UIColor = UIColor.clearColor() {
+    var backColor:UIColor = UIColor.clear {
         willSet{
             self.backColor = newValue
             let dic = ColorFile.colorToDic(self.backColor)
-            setUD(dic, key:backColorUDK)
+            setUD(dic as AnyObject?, key:backColorUDK)
         }
     }
     var blod:Bool = false{
         willSet{
             self.blod = newValue
-            setUD(self.blod, key:blodUDK)
+            setUD(self.blod as AnyObject?, key:blodUDK)
         }
     }
     var italic:Bool = false{
         willSet{
             self.italic = newValue
-            setUD(self.italic, key:italicUDK)
+            setUD(self.italic as AnyObject?, key:italicUDK)
         }
     }
     var underLine:Bool = false{
         willSet{
             self.underLine = newValue
-            setUD(self.underLine, key:underLineUDK)
+            setUD(self.underLine as AnyObject?, key:underLineUDK)
         }
     }
     
-    func setUD(value:AnyObject?,key:String){
-        NSUserDefaults.standardUserDefaults().setObject(value, forKey: key)
-        NSUserDefaults.standardUserDefaults().synchronize()// 同步数据
+    func setUD(_ value:AnyObject?,key:String){
+        UserDefaults.standard.set(value, forKey: key)
+        UserDefaults.standard.synchronize()// 同步数据
     }
-    func getUD(key:String) -> AnyObject? {
-        return NSUserDefaults.standardUserDefaults().objectForKey(key)
+    func getUD(_ key:String) -> AnyObject? {
+        return UserDefaults.standard.object(forKey: key) as AnyObject?
     }
     init(){
         if let text =  getUD(textUDK) as? String {
@@ -105,21 +105,21 @@ struct LabelModel {
             let color = ColorFile.dicToColor(dic)
             textColor = color
         }else{
-            textColor = UIColor.blackColor()
+            textColor = UIColor.black
         }
         
         if let dic =  getUD(backColorUDK) as? [String:CGFloat] {
             let color = ColorFile.dicToColor(dic)
             backColor = color
         }else{
-            backColor = UIColor.clearColor()
+            backColor = UIColor.clear
         }
         
         if let dic = getUD(borderColorUDK) as? [String:CGFloat] {
             let color = ColorFile.dicToColor(dic)
             borderColor = color
         }else{
-            borderColor = UIColor.clearColor()
+            borderColor = UIColor.clear
         }
 
         
@@ -141,23 +141,26 @@ struct LabelModel {
             underLine = false
         }
     }
-    func getAttributes(reScal:CGFloat) ->[String : AnyObject] {
+    func getAttributes(_ reScal:CGFloat) ->[String : AnyObject] {
         var attDic = [String : AnyObject]()
         
         if self.blod {
-            attDic[NSFontAttributeName] = UIFont.boldSystemFontOfSize(self.fontSize * reScal)
+            attDic[NSFontAttributeName] = UIFont.boldSystemFont(ofSize: self.fontSize * reScal)
         }else if self.italic{
-            attDic[NSFontAttributeName] = UIFont.italicSystemFontOfSize(self.fontSize * reScal)
+            attDic[NSFontAttributeName] = UIFont.italicSystemFont(ofSize: self.fontSize * reScal)
         }else{
-            attDic[NSFontAttributeName] = UIFont.systemFontOfSize(self.fontSize * reScal)
+            attDic[NSFontAttributeName] = UIFont.systemFont(ofSize: self.fontSize * reScal)
         }
         if self.underLine {
-            attDic[NSUnderlineStyleAttributeName] = NSUnderlineStyle.StyleSingle.rawValue
+            attDic[NSUnderlineStyleAttributeName] = NSUnderlineStyle.styleSingle.rawValue as AnyObject?
         }
         let paragraph = NSMutableParagraphStyle()
-        paragraph.alignment = .Center
+        paragraph.alignment = .center
         attDic[NSParagraphStyleAttributeName] = paragraph
-        attDic[NSStrokeWidthAttributeName] = -borderSize
+        
+        let a = -borderSize
+        attDic[NSStrokeWidthAttributeName] = a as AnyObject?
+        
         attDic[NSStrokeColorAttributeName] = borderColor
         
         attDic[NSForegroundColorAttributeName] = textColor

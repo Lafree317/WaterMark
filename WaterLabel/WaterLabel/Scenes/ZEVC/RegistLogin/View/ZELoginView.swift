@@ -7,9 +7,8 @@
 //
 
 import UIKit
-import SnapKit
-import RxCocoa
-import RxSwift
+
+
 
 let loginMargin = 15
 extension ZELoginViewController{
@@ -17,85 +16,85 @@ extension ZELoginViewController{
     func setUI(){
         let logoIamgeView = UIImageView()
         logoIamgeView.image = UIImage(named: "logo")
-        logoIamgeView.backgroundColor = UIColor.groupTableViewBackgroundColor()
+        logoIamgeView.backgroundColor = UIColor.groupTableViewBackground
         logoIamgeView.layer.masksToBounds = true
         logoIamgeView.layer.cornerRadius = 10
         view.addSubview(logoIamgeView)
-        logoIamgeView.snp_makeConstraints { (make) in
+        logoIamgeView.snp.makeConstraints { (make) in
             make.top.equalTo(64+20)
-            make.centerX.equalTo(view.snp_centerX)
+            make.centerX.equalTo(view.snp.centerX)
             make.size.equalTo(CGSize(width: 64, height: 64))
         }
         
         let ulabel = ZELabel()
         ulabel.text = "用户名:"
-        ulabel.textAlignment = .Right
+        ulabel.textAlignment = .right
         view.addSubview(ulabel)
-        ulabel.snp_makeConstraints { (make) in
+        ulabel.snp.makeConstraints { (make) in
             make.left.equalTo(10)
             make.width.equalTo(60)
-            make.top.equalTo(logoIamgeView.snp_bottom).offset(30)
+            make.top.equalTo(logoIamgeView.snp.bottom).offset(30)
             make.height.equalTo(30)
         }
         ulabel.sizeToFit()
         userNameF = ZETextField()
         userNameF.placeholder = "请输入用户名"
         view.addSubview(userNameF)
-        userNameF.snp_makeConstraints { (make) in
-            make.left.equalTo(ulabel.snp_right)
-            make.top.equalTo(ulabel.snp_top)
+        userNameF.snp.makeConstraints { (make) in
+            make.left.equalTo(ulabel.snp.right)
+            make.top.equalTo(ulabel.snp.top)
             make.right.equalTo(-10)
-            make.height.equalTo(ulabel.snp_height)
+            make.height.equalTo(ulabel.snp.height)
         }
         
         let pLabel = ZELabel()
-        pLabel.textAlignment = .Right
+        pLabel.textAlignment = .right
         view.addSubview(pLabel)
         pLabel.text = "密码:"
-        pLabel.snp_makeConstraints { (make) in
-            make.right.equalTo(ulabel.snp_right)
-            make.top.equalTo(ulabel.snp_bottom).offset(10)
-            make.height.equalTo(ulabel.snp_height)
+        pLabel.snp.makeConstraints { (make) in
+            make.right.equalTo(ulabel.snp.right)
+            make.top.equalTo(ulabel.snp.bottom).offset(10)
+            make.height.equalTo(ulabel.snp.height)
         }
         
         passWordF = ZETextField()
         passWordF.placeholder = "请输入密码"
         view.addSubview(passWordF)
-        passWordF.snp_makeConstraints { (make) in
-            make.left.equalTo(pLabel.snp_right)
-            make.top.equalTo(pLabel.snp_top)
-            make.right.equalTo(userNameF.snp_right)
-            make.height.equalTo(pLabel.snp_height)
+        passWordF.snp.makeConstraints { (make) in
+            make.left.equalTo(pLabel.snp.right)
+            make.top.equalTo(pLabel.snp.top)
+            make.right.equalTo(userNameF.snp.right)
+            make.height.equalTo(pLabel.snp.height)
         }
         
-        loginButton = UIButton(type: .System)
-        loginButton.setTitle("登陆", forState: .Normal)
+        loginButton = UIButton(type: .system)
+        loginButton.setTitle("登陆", for: UIControlState())
         loginButton.backgroundColor = ZEButtomDefultColor
-        loginButton.setTitleColor(UIColor.whiteColor(), forState: .Normal)
+        loginButton.setTitleColor(UIColor.white, for: UIControlState())
         loginButton.layer.masksToBounds = true
         loginButton.layer.cornerRadius = 5
         view.addSubview(loginButton)
-        loginButton.snp_makeConstraints { (make) in
-            make.left.equalTo(ulabel.snp_left)
-            make.right.equalTo(passWordF.snp_right)
-            make.top.equalTo(passWordF.snp_bottom).offset(10)
+        loginButton.snp.makeConstraints { (make) in
+            make.left.equalTo(ulabel.snp.left)
+            make.right.equalTo(passWordF.snp.right)
+            make.top.equalTo(passWordF.snp.bottom).offset(10)
         }
         
         
-        fogetButton = UIButton(type: .System)
-        fogetButton.setTitle("忘记密码", forState: .Normal)
+        fogetButton = UIButton(type: .system)
+        fogetButton.setTitle("忘记密码", for: UIControlState())
         view.addSubview(fogetButton)
-        fogetButton.snp_makeConstraints { (make) in
-            make.left.equalTo(loginButton.snp_left)
-            make.top.equalTo(loginButton.snp_bottom).offset(10)
+        fogetButton.snp.makeConstraints { (make) in
+            make.left.equalTo(loginButton.snp.left)
+            make.top.equalTo(loginButton.snp.bottom).offset(10)
         }
         
-        registButton = UIButton(type: .System)
-        registButton.setTitle("注册", forState: .Normal)
+        registButton = UIButton(type: .system)
+        registButton.setTitle("注册", for: UIControlState())
         view.addSubview(registButton)
-        registButton.snp_makeConstraints { (make) in
-            make.right.equalTo(loginButton.snp_right)
-            make.top.equalTo(fogetButton.snp_top)
+        registButton.snp.makeConstraints { (make) in
+            make.right.equalTo(loginButton.snp.right)
+            make.top.equalTo(fogetButton.snp.top)
         }
         
     }
