@@ -68,7 +68,6 @@ class HomeViewController: UIViewController {
         imagePickerVC?.sortAscendingByModificationDate = true
         imagePickerVC?.didFinishPickingPhotosHandle = {
             photos,assets,isSelectOriginalPhoto in
-
             weakSelf?.performSegue(withIdentifier: editVCSeugeId, sender: assets)
         }
         
