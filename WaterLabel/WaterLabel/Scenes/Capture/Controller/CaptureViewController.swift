@@ -58,9 +58,9 @@ class CaptureViewController: UIViewController,NJKWebViewProgressDelegate,UIWebVi
     }
     func saveAction(){
         ZEHud.sharedInstance.view = self.view
+        ZEHud.sharedInstance.showHud()
         weak var weakSelf = self
         webView.swContentCapture { (image) in
-            ZEHud.sharedInstance.showHud()
             UIImageWriteToSavedPhotosAlbum(image!, self, nil, nil)// 保存
             ZEHud.sharedInstance.hideHud()
             ZEHud.sharedInstance.showSuccess("截图成功,请到相册中查看")

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		521AFD4B1DA13E7700D797D1 /* LeanCloudData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521AFD4A1DA13E7700D797D1 /* LeanCloudData.swift */; };
+		521AFD4C1DA13E7700D797D1 /* LeanCloudData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521AFD4A1DA13E7700D797D1 /* LeanCloudData.swift */; };
 		522D718F1D4AFEAF00514703 /* ColorSelectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522D718E1D4AFEAF00514703 /* ColorSelectView.swift */; };
 		522D71911D4B001300514703 /* SelectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522D71901D4B001300514703 /* SelectView.swift */; };
 		522D873B1D6C31E40034BCE1 /* ZELoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522D873A1D6C31E40034BCE1 /* ZELoginModel.swift */; };
@@ -184,6 +186,7 @@
 /* Begin PBXFileReference section */
 		01C0DE57A6715F4076B9E57E /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		22DC124B9727EB0F9DDB4DD4 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		521AFD4A1DA13E7700D797D1 /* LeanCloudData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeanCloudData.swift; sourceTree = "<group>"; };
 		522D718E1D4AFEAF00514703 /* ColorSelectView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorSelectView.swift; sourceTree = "<group>"; };
 		522D71901D4B001300514703 /* SelectView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectView.swift; sourceTree = "<group>"; };
 		522D873A1D6C31E40034BCE1 /* ZELoginModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZELoginModel.swift; sourceTree = "<group>"; };
@@ -327,6 +330,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		521AFD491DA13E5C00D797D1 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				521AFD4A1DA13E7700D797D1 /* LeanCloudData.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
 		5257C8A21D473C3200CC30AD /* PublicProtocol */ = {
 			isa = PBXGroup;
 			children = (
@@ -618,6 +629,7 @@
 			children = (
 				525182411D9A4C6A00B4073A /* Assets.xcassets */,
 				527578D71D99345200C87172 /* WaterLabel.entitlements */,
+				521AFD491DA13E5C00D797D1 /* Helper */,
 				52FBD8521D3DDDED00304651 /* Macro */,
 				52FBD8551D3DDDED00304651 /* Scenes */,
 				52FBD86A1D3DDDED00304651 /* StroyBoard */,
@@ -1015,6 +1027,7 @@
 				529710AA1D99546E00DC2C97 /* ConstraintMakerFinalizable.swift in Sources */,
 				529710A61D99546E00DC2C97 /* ConstraintMakerEditable.swift in Sources */,
 				529710B81D99546E00DC2C97 /* ConstraintRelation.swift in Sources */,
+				521AFD4C1DA13E7700D797D1 /* LeanCloudData.swift in Sources */,
 				529710C61D99546E00DC2C97 /* UILayoutGuide+Extensions.swift in Sources */,
 				529710A81D99546E00DC2C97 /* ConstraintMakerExtendable.swift in Sources */,
 			);
@@ -1025,6 +1038,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				529710AF1D99546E00DC2C97 /* ConstraintMultiplierTarget.swift in Sources */,
+				521AFD4B1DA13E7700D797D1 /* LeanCloudData.swift in Sources */,
 				522D873D1D6C33210034BCE1 /* ZEHead.swift in Sources */,
 				528766891D66D80600884323 /* ShowString.m in Sources */,
 				529710B11D99546E00DC2C97 /* ConstraintOffsetTarget.swift in Sources */,
