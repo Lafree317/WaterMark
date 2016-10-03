@@ -11,4 +11,5 @@
 #import "MBProgressHUD.h"
 #import "NJKWebViewProgress.h"
 #import "NJKWebViewProgressView.h"
+#import <AVOSCloud.h>
 #endif /* Capture_Header_h */

@@ -17,8 +17,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-//        Bugly.startWithAppId("edb7ed37bc")
-//        window?.rootViewController = 
+        AVOSCloud.setApplicationId(app_root_id, clientKey: app_root_key)
+        Bugly.start(withAppId: "edb7ed37bc")
+
         return true
     }
 

@@ -1,10 +1,45 @@
 PODS:
+  - AFNetworking (2.6.3):
+    - AFNetworking/NSURLConnection (= 2.6.3)
+    - AFNetworking/NSURLSession (= 2.6.3)
+    - AFNetworking/Reachability (= 2.6.3)
+    - AFNetworking/Security (= 2.6.3)
+    - AFNetworking/Serialization (= 2.6.3)
+    - AFNetworking/UIKit (= 2.6.3)
+  - AFNetworking/NSURLConnection (2.6.3):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/NSURLSession (2.6.3):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (2.6.3)
+  - AFNetworking/Security (2.6.3)
+  - AFNetworking/Serialization (2.6.3)
+  - AFNetworking/UIKit (2.6.3):
+    - AFNetworking/NSURLConnection
+    - AFNetworking/NSURLSession
   - AVOSCloud (3.3.5)
+  - Bugly (2.3.1)
+  - LeanCloudSocial (0.0.8):
+    - AFNetworking (~> 2.0)
+    - AVOSCloud (~> 3.1)
+  - SDWebImage (3.8.1):
+    - SDWebImage/Core (= 3.8.1)
+  - SDWebImage/Core (3.8.1)
 
 DEPENDENCIES:
   - AVOSCloud
+  - Bugly
+  - LeanCloudSocial
+  - SDWebImage
 
 SPEC CHECKSUMS:
+  AFNetworking: cb8d14a848e831097108418f5d49217339d4eb60
   AVOSCloud: 1fe170768bee7e05bc3ea86e38d5bddb105cb957
+  Bugly: c8ece2fa5bdcb404abdd0e07131e8129f580d893
+  LeanCloudSocial: f7787dfc1559dc47263bbfd37a03c870352ad98a
+  SDWebImage: 35f9627a3e44b4f292a8a8ce6a531fa488239b91
 
 COCOAPODS: 0.39.0

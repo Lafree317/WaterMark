@@ -22,6 +22,7 @@
 #import "MBProgressHUD.h"
 #import "NJKWebViewProgress.h"
 #import "NJKWebViewProgressView.h"
-//#import <Bugly/Bugly.h>
+#import <AVOSCloud.h>
+#import <Bugly/Bugly.h>
 
 #endif /* Header_h */

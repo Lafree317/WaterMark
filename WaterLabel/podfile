@@ -1,2 +1,11 @@
+target ’WaterLabel’ do
+platform:ios,’8.0’
+pod 'LeanCloudSocial'
+pod 'SDWebImage'
+pod 'Bugly'
+end
 
+target ‘Capture’ do
+platform:ios,’8.0’
 pod 'AVOSCloud'
+end

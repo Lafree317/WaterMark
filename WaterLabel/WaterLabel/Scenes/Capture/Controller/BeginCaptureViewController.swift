@@ -31,7 +31,11 @@ class BeginCaptureViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.title = "准备截图"
-        self.textView.text = "Capture食用方法:\n1.在其他应用内点击分享打开Captrue保存网址,然后打开应用进行截图\n2.Safari打开网址在网址前加上WM://前缀调起应用进行截图\n3.在输入框内复制网址进行截图\n\n\n\n如果网站长时间没有显示出来请检查是否有https://前缀\n"
+        
+        weak var weakSelf = self
+        LeanCloudData().getCaptureString { (str) in
+            weakSelf?.textView.text = str
+        }
         
     }
 
