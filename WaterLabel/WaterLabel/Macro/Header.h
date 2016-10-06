@@ -24,5 +24,5 @@
 #import "NJKWebViewProgressView.h"
 #import <AVOSCloud.h>
 #import <Bugly/Bugly.h>
-
+#import "SDCycleScrollView.h"
 #endif /* Header_h */

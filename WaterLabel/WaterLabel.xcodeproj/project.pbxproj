@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		521AFD4B1DA13E7700D797D1 /* LeanCloudData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521AFD4A1DA13E7700D797D1 /* LeanCloudData.swift */; };
-		521AFD4C1DA13E7700D797D1 /* LeanCloudData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521AFD4A1DA13E7700D797D1 /* LeanCloudData.swift */; };
 		521AFD5D1DA1481C00D797D1 /* TAAbstractDotView.m in Sources */ = {isa = PBXBuildFile; fileRef = 521AFD501DA1481C00D797D1 /* TAAbstractDotView.m */; };
 		521AFD5E1DA1481C00D797D1 /* TAAnimatedDotView.m in Sources */ = {isa = PBXBuildFile; fileRef = 521AFD521DA1481C00D797D1 /* TAAnimatedDotView.m */; };
 		521AFD5F1DA1481C00D797D1 /* TADotView.m in Sources */ = {isa = PBXBuildFile; fileRef = 521AFD541DA1481C00D797D1 /* TADotView.m */; };
@@ -139,6 +138,12 @@
 		529AD6241D49E53000A99735 /* IGLDropDownMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 529AD6221D49E53000A99735 /* IGLDropDownMenu.m */; };
 		529AD62A1D49F6CD00A99735 /* UIImage+RoundedCorner.m in Sources */ = {isa = PBXBuildFile; fileRef = 529AD6271D49F6CD00A99735 /* UIImage+RoundedCorner.m */; };
 		529AD62B1D49F6CD00A99735 /* UIView+RoundedCorner.m in Sources */ = {isa = PBXBuildFile; fileRef = 529AD6291D49F6CD00A99735 /* UIView+RoundedCorner.m */; };
+		52A921711DA1E0B1004C1C3A /* XYHomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A921701DA1E0B1004C1C3A /* XYHomeVC.swift */; };
+		52A921751DA1E113004C1C3A /* XYHomeViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A921741DA1E113004C1C3A /* XYHomeViewExtension.swift */; };
+		52A921771DA20DD3004C1C3A /* XYHomePageHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A921761DA20DD3004C1C3A /* XYHomePageHeader.swift */; };
+		52A921791DA29199004C1C3A /* XYHomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A921781DA29199004C1C3A /* XYHomeCell.swift */; };
+		52A9217E1DA37767004C1C3A /* BannerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A9217D1DA37767004C1C3A /* BannerModel.swift */; };
+		52A921821DA37C89004C1C3A /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A921811DA37C89004C1C3A /* SwiftyJSON.swift */; };
 		52FAE8D51D9B65E100956AA6 /* NJKWebViewProgress.m in Sources */ = {isa = PBXBuildFile; fileRef = 52FAE8D21D9B65E100956AA6 /* NJKWebViewProgress.m */; };
 		52FAE8D61D9B65E100956AA6 /* NJKWebViewProgress.m in Sources */ = {isa = PBXBuildFile; fileRef = 52FAE8D21D9B65E100956AA6 /* NJKWebViewProgress.m */; };
 		52FAE8D71D9B65E100956AA6 /* NJKWebViewProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 52FAE8D41D9B65E100956AA6 /* NJKWebViewProgressView.m */; };
@@ -313,6 +318,13 @@
 		529AD6271D49F6CD00A99735 /* UIImage+RoundedCorner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+RoundedCorner.m"; sourceTree = "<group>"; };
 		529AD6281D49F6CD00A99735 /* UIView+RoundedCorner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+RoundedCorner.h"; sourceTree = "<group>"; };
 		529AD6291D49F6CD00A99735 /* UIView+RoundedCorner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+RoundedCorner.m"; sourceTree = "<group>"; };
+		52A921701DA1E0B1004C1C3A /* XYHomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XYHomeVC.swift; sourceTree = "<group>"; };
+		52A921741DA1E113004C1C3A /* XYHomeViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = XYHomeViewExtension.swift; path = ../View/XYHomeViewExtension.swift; sourceTree = "<group>"; };
+		52A921761DA20DD3004C1C3A /* XYHomePageHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XYHomePageHeader.swift; sourceTree = "<group>"; };
+		52A921781DA29199004C1C3A /* XYHomeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XYHomeCell.swift; sourceTree = "<group>"; };
+		52A9217D1DA37767004C1C3A /* BannerModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BannerModel.swift; sourceTree = "<group>"; };
+		52A921801DA37C89004C1C3A /* SwiftyJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwiftyJSON.h; sourceTree = "<group>"; };
+		52A921811DA37C89004C1C3A /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 		52FAE8D11D9B65E100956AA6 /* NJKWebViewProgress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NJKWebViewProgress.h; sourceTree = "<group>"; };
 		52FAE8D21D9B65E100956AA6 /* NJKWebViewProgress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NJKWebViewProgress.m; sourceTree = "<group>"; };
 		52FAE8D31D9B65E100956AA6 /* NJKWebViewProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NJKWebViewProgressView.h; sourceTree = "<group>"; };
@@ -648,6 +660,23 @@
 			path = OffscreenRendering;
 			sourceTree = "<group>";
 		};
+		52A9217A1DA34B29004C1C3A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				52A9217D1DA37767004C1C3A /* BannerModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		52A9217F1DA37C89004C1C3A /* SwiftyJSON */ = {
+			isa = PBXGroup;
+			children = (
+				52A921801DA37C89004C1C3A /* SwiftyJSON.h */,
+				52A921811DA37C89004C1C3A /* SwiftyJSON.swift */,
+			);
+			path = SwiftyJSON;
+			sourceTree = "<group>";
+		};
 		52FAE8D01D9B65E100956AA6 /* NJKWebViewProgress */ = {
 			isa = PBXGroup;
 			children = (
@@ -684,6 +713,7 @@
 			children = (
 				525182411D9A4C6A00B4073A /* Assets.xcassets */,
 				527578D71D99345200C87172 /* WaterLabel.entitlements */,
+				52A9217A1DA34B29004C1C3A /* Model */,
 				521AFD491DA13E5C00D797D1 /* Helper */,
 				52FBD8521D3DDDED00304651 /* Macro */,
 				52FBD8551D3DDDED00304651 /* Scenes */,
@@ -805,6 +835,8 @@
 			isa = PBXGroup;
 			children = (
 				52FBD8671D3DDDED00304651 /* HomeViewController.swift */,
+				52A921741DA1E113004C1C3A /* XYHomeViewExtension.swift */,
+				52A921701DA1E0B1004C1C3A /* XYHomeVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -820,6 +852,8 @@
 			isa = PBXGroup;
 			children = (
 				5293CCC31D66DDE50027F40F /* ZEHomeView.swift */,
+				52A921761DA20DD3004C1C3A /* XYHomePageHeader.swift */,
+				52A921781DA29199004C1C3A /* XYHomeCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -836,6 +870,7 @@
 		52FBD86D1D3DDDED00304651 /* Vendors */ = {
 			isa = PBXGroup;
 			children = (
+				52A9217F1DA37C89004C1C3A /* SwiftyJSON */,
 				521AFD4D1DA1481C00D797D1 /* SDCycleScrollView */,
 				52FAE8D01D9B65E100956AA6 /* NJKWebViewProgress */,
 				525182651D9A720B00B4073A /* MBProgressHUD.h */,
@@ -1134,7 +1169,6 @@
 				529710AA1D99546E00DC2C97 /* ConstraintMakerFinalizable.swift in Sources */,
 				529710A61D99546E00DC2C97 /* ConstraintMakerEditable.swift in Sources */,
 				529710B81D99546E00DC2C97 /* ConstraintRelation.swift in Sources */,
-				521AFD4C1DA13E7700D797D1 /* LeanCloudData.swift in Sources */,
 				529710C61D99546E00DC2C97 /* UILayoutGuide+Extensions.swift in Sources */,
 				529710A81D99546E00DC2C97 /* ConstraintMakerExtendable.swift in Sources */,
 			);
@@ -1156,6 +1190,7 @@
 				52FBD8A51D3DDDED00304651 /* HomeViewController.swift in Sources */,
 				529710891D99546E00DC2C97 /* Constraint.swift in Sources */,
 				525E16831D66AA5E0046B38E /* UIView+Layout.m in Sources */,
+				52A921771DA20DD3004C1C3A /* XYHomePageHeader.swift in Sources */,
 				522D873B1D6C31E40034BCE1 /* ZELoginModel.swift in Sources */,
 				529710D31D99565700DC2C97 /* UIView+SwCapture.swift in Sources */,
 				5257C8A11D47368C00CC30AD /* LabelModel.swift in Sources */,
@@ -1166,6 +1201,7 @@
 				5297108D1D99546E00DC2C97 /* ConstraintConfig.swift in Sources */,
 				529710A11D99546E00DC2C97 /* ConstraintLayoutSupportDSL.swift in Sources */,
 				525E167F1D66AA5E0046B38E /* TZPhotoPickerController.m in Sources */,
+				52A9217E1DA37767004C1C3A /* BannerModel.swift in Sources */,
 				529710A71D99546E00DC2C97 /* ConstraintMakerExtendable.swift in Sources */,
 				529710BF1D99546E00DC2C97 /* Debugging.swift in Sources */,
 				5297109D1D99546E00DC2C97 /* ConstraintLayoutGuideDSL.swift in Sources */,
@@ -1177,6 +1213,7 @@
 				529AD61B1D49A51C00A99735 /* ZEToolBar.swift in Sources */,
 				52FBD8A01D3DDDED00304651 /* EditImageView.swift in Sources */,
 				5297108F1D99546E00DC2C97 /* ConstraintConstantTarget.swift in Sources */,
+				52A921751DA1E113004C1C3A /* XYHomeViewExtension.swift in Sources */,
 				525E16821D66AA5E0046B38E /* TZVideoPlayerController.m in Sources */,
 				521AFD5E1DA1481C00D797D1 /* TAAnimatedDotView.m in Sources */,
 				529710AB1D99546E00DC2C97 /* ConstraintMakerPriortizable.swift in Sources */,
@@ -1185,6 +1222,7 @@
 				5256703A1D4F2245005DA86F /* FontEditSubView.swift in Sources */,
 				5251825D1D9A5E3900B4073A /* CaptureModel.swift in Sources */,
 				529710931D99546E00DC2C97 /* ConstraintDSL.swift in Sources */,
+				52A921791DA29199004C1C3A /* XYHomeCell.swift in Sources */,
 				52FBD8411D3DDDD700304651 /* AppDelegate.swift in Sources */,
 				52FBD8A21D3DDDED00304651 /* EditLabelViewController.swift in Sources */,
 				529710C51D99546E00DC2C97 /* UILayoutGuide+Extensions.swift in Sources */,
@@ -1208,6 +1246,8 @@
 				521AFD631DA1481C00D797D1 /* UIView+SDExtension.m in Sources */,
 				529710C71D99546E00DC2C97 /* UILayoutSupport+Extensions.swift in Sources */,
 				529710A31D99546E00DC2C97 /* ConstraintMaker.swift in Sources */,
+				52A921711DA1E0B1004C1C3A /* XYHomeVC.swift in Sources */,
+				52A921821DA37C89004C1C3A /* SwiftyJSON.swift in Sources */,
 				529710C31D99546E00DC2C97 /* LayoutConstraint.swift in Sources */,
 				529710911D99546E00DC2C97 /* ConstraintDescription.swift in Sources */,
 				5297108B1D99546E00DC2C97 /* ConstraintAttributes.swift in Sources */,
